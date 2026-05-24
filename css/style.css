@@ -3,25 +3,36 @@
    Colors inspired by the warm amber/cream logo
    ═══════════════════════════════════════════════ */
 
+/* ═══════════════════════════════════════════════
+   D CANDLE HOUSE — Logo Color Palette
+   Soft Pink · Blush · Warm Taupe · Dusty Rose
+   ═══════════════════════════════════════════════ */
+
 :root {
-  --deep-espresso: #1A0A00;
-  --rich-amber: #B5651D;
-  --warm-gold: #D4A843;
-  --pale-gold: #F0D080;
-  --cream: #FAF6F0;
-  --warm-white: #FFFDF9;
-  --warm-gray: #8B7355;
-  --muted: #A89070;
-  --accent-green: #2D5016;
+  /* Core brand — from logo */
+  --deep-espresso: #4A2E2E;        /* warm dark taupe/brown — text, nav */
+  --rich-amber: #C47A7A;           /* dusty rose — accents, hover */
+  --warm-gold: #E8A0A0;            /* soft pink — labels, highlights */
+  --pale-gold: #F5C8C8;            /* light blush pink */
+  --cream: #FEF4F4;                /* blush white — backgrounds */
+  --warm-white: #FFF9F9;           /* near white with pink tint */
+  --warm-gray: #8C6A6A;            /* muted rose-taupe — body text */
+  --muted: #B89090;                /* light muted rose */
   --whatsapp: #25D366;
 
+  /* Logo pink tones */
+  --logo-pink: #E8A0A0;            /* main logo pink */
+  --logo-blush: #F9D0D0;           /* light blush */
+  --logo-deep: #C47A7A;            /* deeper rose */
+  --logo-taupe: #5C3D3D;           /* dark warm taupe */
+
   --font-display: 'Cormorant Garamond', Georgia, serif;
-  --font-body: 'Jost', system-ui, sans-serif;
+  --font-body: 'Nunito', system-ui, sans-serif;
 
   --radius: 12px;
   --radius-lg: 20px;
-  --shadow: 0 4px 24px rgba(26,10,0,0.10);
-  --shadow-lg: 0 12px 48px rgba(26,10,0,0.16);
+  --shadow: 0 4px 24px rgba(74,46,46,0.10);
+  --shadow-lg: 0 12px 48px rgba(74,46,46,0.16);
 
   --nav-h: 72px;
 }
@@ -53,9 +64,9 @@ button { border: none; cursor: pointer; background: none; font-family: inherit; 
   position: fixed;
   top: 0; left: 0; right: 0;
   z-index: 100;
-  background: rgba(250, 246, 240, 0.95);
+  background: rgba(255, 249, 249, 0.96);
   backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(181,101,29,0.12);
+  border-bottom: 1px solid rgba(232,160,160,0.18);
   transition: box-shadow 0.3s;
 }
 #header.scrolled { box-shadow: var(--shadow); }
@@ -87,7 +98,7 @@ button { border: none; cursor: pointer; background: none; font-family: inherit; 
 }
 .logo-tagline {
   font-size: 0.68rem;
-  color: var(--warm-gold);
+  color: var(--logo-pink);
   letter-spacing: 0.12em;
   text-transform: uppercase;
   font-weight: 500;
@@ -110,8 +121,8 @@ button { border: none; cursor: pointer; background: none; font-family: inherit; 
 
 .cta-nav {
   padding: 10px 22px;
-  background: var(--deep-espresso);
-  color: var(--cream) !important;
+  background: var(--logo-deep);
+  color: #fff !important;
   border-radius: 40px;
   font-size: 0.85rem;
   font-weight: 500;
@@ -119,7 +130,7 @@ button { border: none; cursor: pointer; background: none; font-family: inherit; 
   transition: background 0.2s, transform 0.15s;
   flex-shrink: 0;
 }
-.cta-nav:hover { background: var(--rich-amber); transform: translateY(-1px); }
+.cta-nav:hover { background: var(--logo-taupe); transform: translateY(-1px); }
 
 .hamburger {
   display: none;
@@ -159,8 +170,8 @@ button { border: none; cursor: pointer; background: none; font-family: inherit; 
   align-items: center;
   gap: 8px;
   padding: 14px 28px;
-  background: var(--deep-espresso);
-  color: var(--cream);
+  background: var(--logo-deep);
+  color: #fff;
   border-radius: 40px;
   font-size: 0.9rem;
   font-weight: 500;
@@ -168,9 +179,9 @@ button { border: none; cursor: pointer; background: none; font-family: inherit; 
   transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
 }
 .btn-primary:hover {
-  background: var(--rich-amber);
+  background: var(--logo-taupe);
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(181,101,29,0.3);
+  box-shadow: 0 8px 24px rgba(196,122,122,0.35);
 }
 
 .btn-outline {
@@ -178,8 +189,8 @@ button { border: none; cursor: pointer; background: none; font-family: inherit; 
   align-items: center;
   gap: 8px;
   padding: 13px 28px;
-  border: 1.5px solid var(--deep-espresso);
-  color: var(--deep-espresso);
+  border: 1.5px solid var(--logo-deep);
+  color: var(--logo-deep);
   border-radius: 40px;
   font-size: 0.9rem;
   font-weight: 500;
@@ -187,8 +198,8 @@ button { border: none; cursor: pointer; background: none; font-family: inherit; 
   transition: all 0.2s;
 }
 .btn-outline:hover {
-  background: var(--deep-espresso);
-  color: var(--cream);
+  background: var(--logo-deep);
+  color: #fff;
   transform: translateY(-2px);
 }
 
@@ -212,8 +223,8 @@ button { border: none; cursor: pointer; background: none; font-family: inherit; 
   position: fixed;
   inset: 0;
   background:
-    radial-gradient(ellipse 60% 50% at 80% 20%, rgba(212,168,67,0.08) 0%, transparent 60%),
-    radial-gradient(ellipse 40% 60% at 10% 80%, rgba(181,101,29,0.06) 0%, transparent 50%);
+    radial-gradient(ellipse 60% 50% at 80% 20%, rgba(232,160,160,0.12) 0%, transparent 60%),
+    radial-gradient(ellipse 40% 60% at 10% 80%, rgba(249,208,208,0.10) 0%, transparent 50%);
   pointer-events: none;
   z-index: -1;
 }
@@ -225,7 +236,7 @@ button { border: none; cursor: pointer; background: none; font-family: inherit; 
   font-weight: 500;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--warm-gold);
+  color: var(--logo-deep);
   margin-bottom: 20px;
 }
 
@@ -239,7 +250,7 @@ button { border: none; cursor: pointer; background: none; font-family: inherit; 
 }
 .hero-title em {
   font-style: italic;
-  color: var(--rich-amber);
+  color: var(--logo-deep);
 }
 
 .hero-sub {
@@ -335,9 +346,9 @@ button { border: none; cursor: pointer; background: none; font-family: inherit; 
 
 /* ══════════ CATEGORIES BAR ══════════ */
 .categories-bar {
-  background: var(--cream);
-  border-top: 1px solid rgba(181,101,29,0.1);
-  border-bottom: 1px solid rgba(181,101,29,0.1);
+  background: var(--warm-white);
+  border-top: 1px solid rgba(232,160,160,0.2);
+  border-bottom: 1px solid rgba(232,160,160,0.2);
   padding: 20px 0;
   position: sticky;
   top: var(--nav-h);
@@ -356,16 +367,15 @@ button { border: none; cursor: pointer; background: none; font-family: inherit; 
   font-size: 0.85rem;
   font-weight: 500;
   color: var(--warm-gray);
-  border: 1.5px solid transparent;
+  border: 1.5px solid rgba(232,160,160,0.2);
   background: white;
   transition: all 0.2s;
   cursor: pointer;
 }
 .cat-pill:hover, .cat-pill.active {
-  border-color: var(--deep-espresso);
-  color: var(--deep-espresso);
-  background: var(--deep-espresso);
-  color: var(--cream);
+  border-color: var(--logo-deep);
+  background: var(--logo-deep);
+  color: #fff;
 }
 
 /* ══════════ PRODUCTS ══════════ */
@@ -381,7 +391,7 @@ button { border: none; cursor: pointer; background: none; font-family: inherit; 
   font-weight: 500;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--warm-gold);
+  color: var(--logo-deep);
   margin-bottom: 12px;
 }
 .section-title {
@@ -393,7 +403,7 @@ button { border: none; cursor: pointer; background: none; font-family: inherit; 
 }
 .section-title em {
   font-style: italic;
-  color: var(--rich-amber);
+  color: var(--logo-deep);
 }
 
 .product-grid {
@@ -408,7 +418,7 @@ button { border: none; cursor: pointer; background: none; font-family: inherit; 
   border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: 0 2px 12px rgba(26,10,0,0.07);
-  border: 1px solid rgba(181,101,29,0.08);
+  border: 1px solid rgba(232,160,160,0.15);
   transition: transform 0.25s, box-shadow 0.25s;
   cursor: pointer;
   animation: fadeInUp 0.5s ease forwards;
@@ -441,8 +451,8 @@ button { border: none; cursor: pointer; background: none; font-family: inherit; 
 .product-badge {
   position: absolute;
   top: 12px; left: 12px;
-  background: var(--deep-espresso);
-  color: var(--cream);
+  background: var(--logo-deep);
+  color: #fff;
   font-size: 0.68rem;
   font-weight: 600;
   letter-spacing: 0.08em;
@@ -456,7 +466,7 @@ button { border: none; cursor: pointer; background: none; font-family: inherit; 
   font-size: 0.7rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--warm-gold);
+  color: var(--logo-deep);
   font-weight: 600;
   margin-bottom: 6px;
 }
@@ -471,7 +481,7 @@ button { border: none; cursor: pointer; background: none; font-family: inherit; 
 .product-price {
   font-size: 1.1rem;
   font-weight: 600;
-  color: var(--rich-amber);
+  color: var(--logo-taupe);
   margin-bottom: 16px;
 }
 .product-price span {
@@ -500,17 +510,17 @@ button { border: none; cursor: pointer; background: none; font-family: inherit; 
 .product-wa:hover { opacity: 0.9; transform: translateY(-1px); }
 .product-detail {
   padding: 10px 14px;
-  border: 1.5px solid rgba(181,101,29,0.25);
-  color: var(--rich-amber);
+  border: 1.5px solid rgba(196,122,122,0.35);
+  color: var(--logo-deep);
   border-radius: 8px;
   font-size: 0.82rem;
   font-weight: 500;
   transition: all 0.2s;
 }
 .product-detail:hover {
-  background: var(--rich-amber);
+  background: var(--logo-deep);
   color: white;
-  border-color: var(--rich-amber);
+  border-color: var(--logo-deep);
 }
 
 .product-card.hidden { display: none; }
@@ -586,7 +596,7 @@ button { border: none; cursor: pointer; background: none; font-family: inherit; 
   font-size: 0.72rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: var(--warm-gold);
+  color: var(--logo-deep);
   font-weight: 600;
   margin-bottom: 8px;
 }
@@ -601,7 +611,7 @@ button { border: none; cursor: pointer; background: none; font-family: inherit; 
 .modal-price {
   font-size: 1.5rem;
   font-weight: 600;
-  color: var(--rich-amber);
+  color: var(--logo-taupe);
   margin-bottom: 20px;
 }
 .modal-specs {
@@ -636,7 +646,7 @@ button { border: none; cursor: pointer; background: none; font-family: inherit; 
 /* ══════════ ABOUT ══════════ */
 .section-about {
   padding: 100px 0;
-  background: var(--cream);
+  background: #FEF0F0;
 }
 .about-grid {
   display: grid;
@@ -693,7 +703,7 @@ button { border: none; cursor: pointer; background: none; font-family: inherit; 
   background: white;
   padding: 6px 14px;
   border-radius: 20px;
-  border: 1px solid rgba(181,101,29,0.15);
+  border: 1px solid rgba(232,160,160,0.25);
 }
 
 /* ══════════ INSTAGRAM STRIP ══════════ */
@@ -716,10 +726,10 @@ button { border: none; cursor: pointer; background: none; font-family: inherit; 
   gap: 8px;
   font-size: 0.95rem;
   font-weight: 500;
-  color: var(--rich-amber);
+  color: var(--logo-deep);
   transition: color 0.2s;
 }
-.insta-handle:hover { color: var(--deep-espresso); }
+.insta-handle:hover { color: var(--logo-taupe); }
 .insta-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -752,7 +762,7 @@ button { border: none; cursor: pointer; background: none; font-family: inherit; 
 /* ══════════ CONTACT ══════════ */
 .section-contact {
   padding: 100px 0;
-  background: var(--deep-espresso);
+  background: #3D2020;
   color: var(--cream);
 }
 .contact-grid {
@@ -763,7 +773,7 @@ button { border: none; cursor: pointer; background: none; font-family: inherit; 
 }
 .contact-info .section-label { color: var(--warm-gold); }
 .contact-info .section-title { color: var(--cream); text-align: left; margin-bottom: 20px; }
-.contact-info em { color: var(--pale-gold); }
+.contact-info em { color: var(--logo-blush); }
 .contact-text { color: rgba(250,246,240,0.65); margin-bottom: 36px; line-height: 1.7; }
 .contact-items { display: flex; flex-direction: column; gap: 16px; }
 .contact-item {
@@ -776,9 +786,9 @@ button { border: none; cursor: pointer; background: none; font-family: inherit; 
   border: 1px solid rgba(255,255,255,0.06);
   transition: background 0.2s;
 }
-.contact-item:hover { background: rgba(212,168,67,0.08); }
+.contact-item:hover { background: rgba(232,160,160,0.08); }
 .contact-icon { font-size: 1.3rem; flex-shrink: 0; }
-.contact-item strong { font-size: 0.9rem; color: var(--pale-gold); display: block; margin-bottom: 2px; }
+.contact-item strong { font-size: 0.9rem; color: var(--logo-blush); display: block; margin-bottom: 2px; }
 .contact-item p { font-size: 0.85rem; color: rgba(250,246,240,0.6); }
 
 /* Contact Form */
@@ -842,17 +852,17 @@ button { border: none; cursor: pointer; background: none; font-family: inherit; 
   padding: 14px;
   font-size: 0.95rem;
   justify-content: center;
-  background: var(--warm-gold);
-  color: var(--deep-espresso);
+  background: var(--logo-pink);
+  color: #3D2020;
   margin-bottom: 12px;
 }
-.form-submit:hover { background: var(--pale-gold); }
+.form-submit:hover { background: var(--logo-blush); }
 .form-note { font-size: 0.8rem; color: rgba(250,246,240,0.4); text-align: center; }
-.form-note a { color: var(--warm-gold); }
+.form-note a { color: var(--logo-pink); }
 
 /* ══════════ FOOTER ══════════ */
 .footer {
-  background: #0F0600;
+  background: #2A1515;
   color: rgba(250,246,240,0.55);
 }
 .footer-grid {
@@ -883,7 +893,7 @@ button { border: none; cursor: pointer; background: none; font-family: inherit; 
   padding: 5px 0;
   transition: color 0.2s;
 }
-.footer-links a:hover { color: var(--warm-gold); }
+.footer-links a:hover { color: var(--logo-pink); }
 .footer-bottom {
   border-top: 1px solid rgba(255,255,255,0.06);
   padding: 20px 24px;
@@ -966,4 +976,29 @@ button { border: none; cursor: pointer; background: none; font-family: inherit; 
   .insta-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
   .footer-grid { grid-template-columns: 1fr; }
   .contact-form { padding: 24px; }
+}
+
+/* ── Logo Image (nav + footer) ── */
+.nav-logo-img {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 2px solid rgba(233,167,167,0.35);
+  box-shadow: 0 2px 10px rgba(233,120,120,0.15);
+  transition: transform 0.3s ease;
+}
+.logo-link:hover .nav-logo-img {
+  transform: scale(1.06);
+}
+
+.footer-logo-img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  opacity: 0.9;
+  border: 2px solid rgba(233,167,167,0.2);
 }

@@ -5,7 +5,7 @@
 (function () {
   'use strict';
 
-  const WA_NUM = '918043883382';
+  const WA_NUM = '917891029566';
   const WA_BASE = `https://wa.me/${WA_NUM}?text=`;
 
   /* ══ Utilities ══ */
