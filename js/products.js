@@ -27,7 +27,7 @@ window.PRODUCTS = [
     categoryLabel: "Resin Clock",
     price: "₹2,200",
     priceUnit: "/Piece",
-    image: "https://5.imimg.com/data5/WA_9696/Default/2026/1/574302331/YU/DZ/UB/260299642/featuring-delicate-golden-shimmer-suspended-in-a-deep-glossy-black-resin-this-clock-is-giving-off-ma-250x250.jpeg",
+    image: "https://5.imimg.com/data5/WA_9696/Default/2026/1/574302331/YU/DZ/UB/260299642/featuring-delicate-golden-shimmer-suspended-in-a-deep-glossy-black-resin-this-clock-is-giving-off-ma-500x500.jpeg",
     badge: "Bestseller",
     specs: {
       "Clock Type": "Wall Clock",
@@ -45,7 +45,7 @@ window.PRODUCTS = [
     categoryLabel: "Resin Clock",
     price: "₹1,999",
     priceUnit: "/Piece",
-    image: "https://5.imimg.com/data5/WA_9696/Default/2026/1/574303523/LT/DL/PW/260299642/image-1767868420-1263-919950269992-250x250.jpeg",
+    image: "https://5.imimg.com/data5/WA_9696/Default/2026/1/574303523/LT/DL/PW/260299642/image-1767868420-1263-919950269992-500x500.jpeg",
     specs: {
       "Clock Type": "Wall Clock",
       "Resin Type": "Epoxy Resin",
@@ -62,7 +62,7 @@ window.PRODUCTS = [
     categoryLabel: "Resin Clock",
     price: "₹1,199",
     priceUnit: "/Piece",
-    image: "https://5.imimg.com/data5/WA_9696/Default/2026/1/574411333/KK/EU/HL/260299642/image-250x250.jpeg",
+    image: "https://5.imimg.com/data5/WA_9696/Default/2026/1/574411333/KK/EU/HL/260299642/image-500x500.jpeg",
     specs: {
       "Clock Type": "Wall Clock",
       "Resin Type": "Epoxy Resin",
@@ -79,7 +79,7 @@ window.PRODUCTS = [
     categoryLabel: "Resin Clock",
     price: "₹2,699",
     priceUnit: "/Piece",
-    image: "https://5.imimg.com/data5/SELLER/Default/2026/1/575732109/SU/HP/CN/260299642/resin-clock-250x250.jpeg",
+    image: "https://5.imimg.com/data5/SELLER/Default/2026/1/575732109/SU/HP/CN/260299642/resin-clock-500x500.jpeg",
     badge: "Premium",
     specs: {
       "Clock Type": "Wall Clock",
@@ -97,7 +97,7 @@ window.PRODUCTS = [
     categoryLabel: "Resin Clock",
     price: "₹3,999",
     priceUnit: "/Piece",
-    image: "https://5.imimg.com/data5/SELLER/Default/2026/1/575535208/HR/QV/TA/260299642/image-250x250.jpeg",
+    image: "https://5.imimg.com/data5/SELLER/Default/2026/1/575535208/HR/QV/TA/260299642/image-500x500.jpeg",
     badge: "Luxury",
     specs: {
       "Clock Type": "Wall Clock",
@@ -132,7 +132,7 @@ window.PRODUCTS = [
     categoryLabel: "Resin Clock",
     price: "₹6,500",
     priceUnit: "/Piece",
-    image: "https://5.imimg.com/data5/WA_9696/Default/2026/1/574415079/IE/YF/XL/260299642/image-250x250.jpeg",
+    image: "https://5.imimg.com/data5/WA_9696/Default/2026/1/574415079/IE/YF/XL/260299642/image-500x500.jpeg",
     badge: "Signature",
     specs: {
       "Clock Type": "Wall Clock",
@@ -150,7 +150,7 @@ window.PRODUCTS = [
     categoryLabel: "Resin Clock",
     price: "₹1,999",
     priceUnit: "/Piece",
-    image: "https://5.imimg.com/data5/SELLER/Default/2026/1/575535596/IH/SP/RS/260299642/image-250x250.jpeg",
+    image: "https://5.imimg.com/data5/SELLER/Default/2026/1/575535596/IH/SP/RS/260299642/image-500x500.jpeg",
     specs: {
       "Clock Type": "Wall Clock",
       "Resin Type": "Epoxy Resin",
@@ -169,7 +169,7 @@ window.PRODUCTS = [
     categoryLabel: "Jar Candle",
     price: "₹199",
     priceUnit: "/Piece",
-    image: "https://5.imimg.com/data5/SELLER/Default/2026/1/573765227/TX/IS/PJ/260299642/bell-shaped-glass-jar-aroma-candle-250x250.png",
+    image: "https://5.imimg.com/data5/SELLER/Default/2026/1/573765227/TX/IS/PJ/260299642/bell-shaped-glass-jar-aroma-candle-500x500.png",
     badge: "Eco-Friendly",
     specs: {
       "Wax Weight": "100 g",
@@ -187,7 +187,7 @@ window.PRODUCTS = [
     categoryLabel: "Soy Candle",
     price: "₹210",
     priceUnit: "/Piece",
-    image: "https://5.imimg.com/data5/SELLER/Default/2026/1/574298455/TK/YK/MA/260299642/2-250x250.png",
+    image: "https://5.imimg.com/data5/SELLER/Default/2026/1/574298455/TK/YK/MA/260299642/2-500x500.png",
     specs: {
       "Wax Weight": "80 g",
       "Type": "Wooden Heart Candle",
@@ -204,7 +204,7 @@ window.PRODUCTS = [
     categoryLabel: "Scented Candle",
     price: "₹69",
     priceUnit: "/Piece",
-    image: "https://5.imimg.com/data5/SELLER/Default/2026/1/575858963/RF/TW/QH/260299642/clay-boat-scented-candle-250x250.png",
+    image: "https://5.imimg.com/data5/SELLER/Default/2026/1/575858963/RF/TW/QH/260299642/clay-boat-scented-candle-500x500.png",
     badge: "Value Pick",
     specs: {
       "Type": "Clay Boat Candle",
@@ -224,7 +224,7 @@ window.PRODUCTS = [
     categoryLabel: "Candle Jar",
     price: "₹39",
     priceUnit: "/Piece",
-    image: "https://5.imimg.com/data5/WA_9696/Default/2026/1/573557868/UN/UU/AH/260299642/image-250x250.jpeg",
+    image: "https://5.imimg.com/data5/WA_9696/Default/2026/1/573557868/UN/UU/AH/260299642/image-500x500.jpeg",
     badge: "Wholesale Friendly",
     specs: {
       "Material": "Concrete",
@@ -241,7 +241,7 @@ window.PRODUCTS = [
     categoryLabel: "Candle Jar",
     price: "₹75",
     priceUnit: "/Piece",
-    image: "https://5.imimg.com/data5/WA_9696/Default/2026/1/575271767/DG/AD/MT/260299642/image-250x250.jpeg",
+    image: "https://5.imimg.com/data5/WA_9696/Default/2026/1/575271767/DG/AD/MT/260299642/image-500x500.jpeg",
     specs: {
       "Material": "Concrete",
       "Shape": "Bowl"
@@ -256,7 +256,7 @@ window.PRODUCTS = [
     categoryLabel: "Candle Jar",
     price: "₹149",
     priceUnit: "/Piece",
-    image: "https://5.imimg.com/data5/WA_9696/Default/2026/1/575272239/WU/CC/ZL/260299642/image-250x250.jpeg",
+    image: "https://5.imimg.com/data5/WA_9696/Default/2026/1/575272239/WU/CC/ZL/260299642/image-500x500.jpeg",
     specs: {
       "Material": "Concrete",
       "Shape": "Heart"
@@ -271,7 +271,7 @@ window.PRODUCTS = [
     categoryLabel: "Candle Jar",
     price: "₹49",
     priceUnit: "/Piece",
-    image: "https://5.imimg.com/data5/WA_9696/Default/2026/1/575271586/VF/NY/VR/260299642/image-250x250.jpeg",
+    image: "https://5.imimg.com/data5/WA_9696/Default/2026/1/575271586/VF/NY/VR/260299642/image-500x500.jpeg",
     specs: {
       "Material": "Concrete",
       "Shape": "Lotus Flower"
@@ -288,7 +288,7 @@ window.PRODUCTS = [
     categoryLabel: "Resin Tray",
     price: "₹1,499",
     priceUnit: "/Piece",
-    image: "https://5.imimg.com/data5/WA_9696/Default/2026/1/574411461/PN/KA/SQ/260299642/image-250x250.jpeg",
+    image: "https://5.imimg.com/data5/WA_9696/Default/2026/1/574411461/PN/KA/SQ/260299642/image-500x500.jpeg",
     specs: {
       "Base Material": "Resin Only",
       "Style": "Floral",
@@ -305,7 +305,7 @@ window.PRODUCTS = [
     categoryLabel: "Decorative Tray",
     price: "₹199",
     priceUnit: "/Piece",
-    image: "https://5.imimg.com/data5/WA_9696/Default/2026/1/573555010/OT/FC/TG/260299642/image-250x250.jpeg",
+    image: "https://5.imimg.com/data5/WA_9696/Default/2026/1/573555010/OT/FC/TG/260299642/image-500x500.jpeg",
     specs: {
       "Material": "Concrete",
       "Size": "5 Inch",
@@ -324,7 +324,7 @@ window.PRODUCTS = [
     categoryLabel: "Resin Art",
     price: "₹1,350",
     priceUnit: "/Piece",
-    image: "https://5.imimg.com/data5/WA_9696/Default/2026/1/574413098/FW/XO/YX/260299642/image-250x250.jpeg",
+    image: "https://5.imimg.com/data5/WA_9696/Default/2026/1/574413098/FW/XO/YX/260299642/image-500x500.jpeg",
     badge: "Unique",
     specs: {
       "Outer Material": "Resin",
@@ -342,7 +342,7 @@ window.PRODUCTS = [
     categoryLabel: "Resin Furniture",
     price: "₹999",
     priceUnit: "/Piece",
-    image: "https://5.imimg.com/data5/WA_9696/Default/2026/1/574415653/IX/CR/CG/260299642/image-250x250.jpeg",
+    image: "https://5.imimg.com/data5/WA_9696/Default/2026/1/574415653/IX/CR/CG/260299642/image-500x500.jpeg",
     specs: {
       "Shape": "Round",
       "Top Material": "Wood & Epoxy",
