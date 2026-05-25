@@ -1299,3 +1299,23 @@ button { border: none; cursor: pointer; background: none; font-family: inherit; 
   .hero-stats { flex-direction: column; width: 100%; }
   .stat-divider { width: 80%; height: 1px; }
 }
+
+/* ── Category pill count badge ── */
+.pill-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255,255,255,0.25);
+  color: inherit;
+  font-size: 0.65rem;
+  font-weight: 800;
+  min-width: 18px;
+  height: 18px;
+  border-radius: 20px;
+  padding: 0 5px;
+  margin-left: 4px;
+}
+.cat-pill.active .pill-count {
+  background: rgba(255,255,255,0.3);
+  color: white;
+}

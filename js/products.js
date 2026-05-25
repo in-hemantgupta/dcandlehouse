@@ -1,381 +1,794 @@
 /**
  * ═══════════════════════════════════════════════════════════
- *  D CANDLE HOUSE — Products Data
- *  ───────────────────────────────────────────────────────────
+ *  D Candle House — Complete Product Catalogue (55 Products)
+ *  Source: IndiaMART Export + Catalogue HTML
+ *  Images: 1000x1000 high resolution
+ * ───────────────────────────────────────────────────────────
  *  HOW TO ADD A NEW PRODUCT:
- *  1. Copy any product block from below
- *  2. Paste it inside the `window.PRODUCTS = [...]` array
- *  3. Update: id, name, category, price, image, specs, desc
- *  4. Save and push to GitHub — live in seconds!
+ *  1. Copy any product block
+ *  2. Paste inside window.PRODUCTS = [...]
+ *  3. Update: id, name, category, price, image, indiamart URL
+ *  4. Save and push to GitHub
  *
- *  CATEGORIES (use exactly as written):
- *    candles        → Candles
- *    resin-clock    → Resin Clocks
- *    resin-tray     → Resin Trays
- *    candle-jar     → Candle Jars
- *    other          → More / Other
+ *  CATEGORIES:
+ *    candles       → Candles (soy, scented, jar)
+ *    resin-clock   → Resin Clocks
+ *    resin-tray    → Resin & Concrete Trays
+ *    candle-jar    → Candle Jars
+ *    other         → Bags, Keychains, Tables, Frames etc.
  * ═══════════════════════════════════════════════════════════
  */
 
 window.PRODUCTS = [
-
-  /* ── RESIN CLOCKS ── */
   {
     id: 1,
-    name: "Geode Rectangular Resin Clock",
-    category: "resin-clock",
-    categoryLabel: "Resin Clock",
-    price: "₹2,200",
-    priceUnit: "/Piece",
-    image: "https://5.imimg.com/data5/WA_9696/Default/2026/1/574302331/YU/DZ/UB/260299642/featuring-delicate-golden-shimmer-suspended-in-a-deep-glossy-black-resin-this-clock-is-giving-off-ma-500x500.jpeg",
-    badge: "Bestseller",
-    specs: {
-      "Clock Type": "Wall Clock",
-      "Resin Type": "Epoxy Resin",
-      "Design Style": "Geode",
-      "Base Material": "Resin With MDF"
-    },
-    desc: "Featuring delicate golden shimmer suspended in a deep, glossy black resin, this clock is a statement piece for any wall. Handcrafted epoxy geode art with a silent quartz movement.",
-    indiamart: "https://www.indiamart.com/proddetail/geode-rectangular-resin-clock-2858467793655.html"
-  },
-  {
-    id: 2,
-    name: "Ocean Theme Triangle Resin Clock",
-    category: "resin-clock",
-    categoryLabel: "Resin Clock",
-    price: "₹1,999",
-    priceUnit: "/Piece",
-    image: "https://5.imimg.com/data5/WA_9696/Default/2026/1/574303523/LT/DL/PW/260299642/image-1767868420-1263-919950269992-500x500.jpeg",
-    specs: {
-      "Clock Type": "Wall Clock",
-      "Resin Type": "Epoxy Resin",
-      "Design Style": "Ocean Theme",
-      "Base Material": "Resin With MDF"
-    },
-    desc: "A striking triangular wall clock inspired by ocean waves and coastal hues. Each piece is unique — no two are identical.",
-    indiamart: "https://www.indiamart.com/proddetail/ocean-theme-triangle-resin-clock-2858467806330.html"
-  },
-  {
-    id: 3,
-    name: "Ocean Theme Round Resin Clock",
-    category: "resin-clock",
-    categoryLabel: "Resin Clock",
-    price: "₹1,199",
-    priceUnit: "/Piece",
-    image: "https://5.imimg.com/data5/WA_9696/Default/2026/1/574411333/KK/EU/HL/260299642/image-500x500.jpeg",
-    specs: {
-      "Clock Type": "Wall Clock",
-      "Resin Type": "Epoxy Resin",
-      "Design Style": "Ocean Theme",
-      "Base Material": "Resin With MDF"
-    },
-    desc: "Round ocean-inspired resin clock. Cool blues and teals flowing in epoxy — a serene addition to any room.",
-    indiamart: "https://www.indiamart.com/proddetail/ocean-theme-round-resin-clock-2858468109633.html"
-  },
-  {
-    id: 4,
-    name: "Contemporary Round Resin Clock",
-    category: "resin-clock",
-    categoryLabel: "Resin Clock",
-    price: "₹2,699",
-    priceUnit: "/Piece",
-    image: "https://5.imimg.com/data5/SELLER/Default/2026/1/575732109/SU/HP/CN/260299642/resin-clock-500x500.jpeg",
-    badge: "Premium",
-    specs: {
-      "Clock Type": "Wall Clock",
-      "Design Style": "Geode",
-      "Base Material": "Resin With MDF",
-      "Movement Type": "Silent Sweep"
-    },
-    desc: "Contemporary geode-inspired round clock with a silent sweep mechanism. Luxury wall art that tells time.",
-    indiamart: "https://www.indiamart.com/proddetail/contemporary-round-resin-clock-2858523894091.html"
-  },
-  {
-    id: 5,
-    name: "Marble Effect Round Resin Clock",
-    category: "resin-clock",
-    categoryLabel: "Resin Clock",
-    price: "₹3,999",
-    priceUnit: "/Piece",
-    image: "https://5.imimg.com/data5/SELLER/Default/2026/1/575535208/HR/QV/TA/260299642/image-500x500.jpeg",
-    badge: "Luxury",
-    specs: {
-      "Clock Type": "Wall Clock",
-      "Resin Type": "Epoxy Resin",
-      "Design Style": "Marble Effect",
-      "Base Material": "Resin Only"
-    },
-    desc: "Luxurious marble-effect round resin clock. Pure resin construction, no MDF. Elegant, weighty, timeless.",
-    indiamart: "https://www.indiamart.com/proddetail/marble-effect-round-resin-clock-2858508253055.html"
-  },
-  {
-    id: 6,
-    name: "Epoxy Resin Wooden Wall Clock",
-    category: "resin-clock",
-    categoryLabel: "Resin Clock",
-    price: "₹1,999",
-    priceUnit: "/Piece",
-    image: "https://5.imimg.com/data5/ANDROID/Default/2026/2/584679186/GM/TK/PQ/260299642/product-jpeg-250x250.jpg",
-    specs: {
-      "Clock Type": "Wall Clock",
-      "Resin Type": "Epoxy Resin",
-      "Design Style": "Marble Effect",
-      "Base Material": "Resin With Wood"
-    },
-    desc: "A beautiful fusion of natural wood and epoxy resin. Each clock showcases unique natural wood grain patterns enhanced with resin art.",
-    indiamart: "https://www.indiamart.com/proddetail/epoxy-resin-wooden-wall-clock-2858831754697.html"
-  },
-  {
-    id: 7,
-    name: "Geode Round Resin Clock",
-    category: "resin-clock",
-    categoryLabel: "Resin Clock",
-    price: "₹6,500",
-    priceUnit: "/Piece",
-    image: "https://5.imimg.com/data5/WA_9696/Default/2026/1/574415079/IE/YF/XL/260299642/image-500x500.jpeg",
-    badge: "Signature",
-    specs: {
-      "Clock Type": "Wall Clock",
-      "Resin Type": "Epoxy Resin",
-      "Design Style": "Geode",
-      "Base Material": "Resin With MDF"
-    },
-    desc: "Our flagship geode round clock — a showpiece of artisanal resin work. This is the one that stops conversations.",
-    indiamart: "https://www.indiamart.com/proddetail/geode-round-resin-clock-2858468353297.html"
-  },
-  {
-    id: 8,
-    name: "Coastal Round Resin Clock",
-    category: "resin-clock",
-    categoryLabel: "Resin Clock",
-    price: "₹1,999",
-    priceUnit: "/Piece",
-    image: "https://5.imimg.com/data5/SELLER/Default/2026/1/575535596/IH/SP/RS/260299642/image-500x500.jpeg",
-    specs: {
-      "Clock Type": "Wall Clock",
-      "Resin Type": "Epoxy Resin",
-      "Design Style": "Coastal",
-      "Base Material": "Resin Only"
-    },
-    desc: "Sandy tones and coastal blues captured in epoxy resin. A calming, beachy statement clock.",
-    indiamart: "https://www.indiamart.com/proddetail/coastal-round-resin-clock-2858508260991.html"
-  },
-
-  /* ── CANDLES ── */
-  {
-    id: 9,
-    name: "100 g Rose Jar Candle",
-    category: "candles",
-    categoryLabel: "Jar Candle",
-    price: "₹199",
-    priceUnit: "/Piece",
-    image: "https://5.imimg.com/data5/SELLER/Default/2026/1/573765227/TX/IS/PJ/260299642/bell-shaped-glass-jar-aroma-candle-500x500.png",
-    badge: "Eco-Friendly",
-    specs: {
-      "Wax Weight": "100 g",
-      "Container": "Glass Jar",
-      "Scent": "Rose",
-      "Wax Type": "Soy Wax"
-    },
-    desc: "Pure soy wax candle with lead-free cotton wick in a beautiful bell-shaped glass jar. Rose scented for a calming, romantic atmosphere.",
-    indiamart: "https://www.indiamart.com/proddetail/100-g-rose-jar-candle-2858405047562.html"
-  },
-  {
-    id: 10,
-    name: "Heart Soy Candle",
-    category: "candles",
-    categoryLabel: "Soy Candle",
-    price: "₹210",
-    priceUnit: "/Piece",
-    image: "https://5.imimg.com/data5/SELLER/Default/2026/1/574298455/TK/YK/MA/260299642/2-500x500.png",
-    specs: {
-      "Wax Weight": "80 g",
-      "Type": "Wooden Heart Candle",
-      "Scent": "Rose",
-      "Wax Type": "Soy Wax"
-    },
-    desc: "A charming heart-shaped soy wax candle on a wooden base. Rose fragrance with a lead-free cotton wick. Perfect for gifting.",
-    indiamart: "https://www.indiamart.com/proddetail/heart-soy-candle-2858440508730.html"
-  },
-  {
-    id: 11,
-    name: "Clay Boat Scented Candle",
-    category: "candles",
-    categoryLabel: "Scented Candle",
-    price: "₹69",
-    priceUnit: "/Piece",
-    image: "https://5.imimg.com/data5/SELLER/Default/2026/1/575858963/RF/TW/QH/260299642/clay-boat-scented-candle-500x500.png",
-    badge: "Value Pick",
-    specs: {
-      "Type": "Clay Boat Candle",
-      "Wax": "Soy Wax",
-      "Weight": "33 g",
-      "Fragrance": "Rose"
-    },
-    desc: "Beautifully handcrafted clay boat candle filled with soy wax. A unique, affordable gifting option. Rose fragrance.",
-    indiamart: "https://www.indiamart.com/proddetail/clay-boat-scented-candle-2858405040973.html"
-  },
-
-  /* ── CANDLE JARS ── */
-  {
-    id: 12,
     name: "Concrete Round Twisted Candle Jar",
     category: "candle-jar",
     categoryLabel: "Candle Jar",
     price: "₹39",
     priceUnit: "/Piece",
-    image: "https://5.imimg.com/data5/WA_9696/Default/2026/1/573557868/UN/UU/AH/260299642/image-500x500.jpeg",
-    badge: "Wholesale Friendly",
-    specs: {
-      "Material": "Concrete",
-      "Shape": "Round Twisted",
-      "Use": "Candle Jar / Decor"
-    },
-    desc: "Minimalist concrete round twisted candle jar. Rustic, modern, and uniquely textured. Great for wholesale and retail.",
+    image: "https://5.imimg.com/data5/WA_9696/Default/2026/1/573557868/UN/UU/AH/260299642/image-1000x1000.jpeg",
+    images: ["https://5.imimg.com/data5/WA_9696/Default/2026/1/573557868/UN/UU/AH/260299642/image-1000x1000.jpeg", "https://5.imimg.com/data5/WA_9696/Default/2026/1/573557878/FP/WI/MU/260299642/image-1000x1000.jpeg", "https://5.imimg.com/data5/WA_9696/Default/2026/1/573557865/WO/AW/FI/260299642/image-1000x1000.jpeg"],
+    badge: "Value Pick",
+    specs: {},
+    desc: "",
     indiamart: "https://www.indiamart.com/proddetail/concrete-round-twisted-candle-jar-2858401131348.html"
   },
   {
-    id: 13,
+    id: 2,
     name: "Concrete Bowl Candle Jar",
     category: "candle-jar",
     categoryLabel: "Candle Jar",
     price: "₹75",
     priceUnit: "/Piece",
-    image: "https://5.imimg.com/data5/WA_9696/Default/2026/1/575271767/DG/AD/MT/260299642/image-500x500.jpeg",
-    specs: {
-      "Material": "Concrete",
-      "Shape": "Bowl"
-    },
-    desc: "A wide concrete bowl candle jar — perfect for pillar candles or as a standalone decorative piece.",
+    image: "https://5.imimg.com/data5/WA_9696/Default/2026/1/575271767/DG/AD/MT/260299642/image-1000x1000.jpeg",
+    images: ["https://5.imimg.com/data5/WA_9696/Default/2026/1/575271767/DG/AD/MT/260299642/image-1000x1000.jpeg", "https://5.imimg.com/data5/WA_9696/Default/2026/1/575271778/LS/TZ/WZ/260299642/image-1000x1000.jpeg", "https://5.imimg.com/data5/WA_9696/Default/2026/1/575271783/OB/JI/UU/260299642/image-1000x1000.jpeg"],
+    badge: "",
+    specs: {},
+    desc: "",
     indiamart: "https://www.indiamart.com/proddetail/concrete-bowl-candle-jar-2858507453391.html"
   },
   {
-    id: 14,
+    id: 3,
+    name: "Concrete Small Shankh Candle Jar",
+    category: "candle-jar",
+    categoryLabel: "Candle Jar",
+    price: "₹49",
+    priceUnit: "/Piece",
+    image: "https://5.imimg.com/data5/WA_9696/Default/2026/1/575272604/UW/EJ/IK/260299642/concrete-shankh-for-candle-1000x1000.jpeg",
+    images: ["https://5.imimg.com/data5/WA_9696/Default/2026/1/575272604/UW/EJ/IK/260299642/concrete-shankh-for-candle-1000x1000.jpeg", "https://5.imimg.com/data5/WA_9696/Default/2026/1/575272616/CA/LH/CK/260299642/image-1000x1000.jpeg", "https://5.imimg.com/data5/WA_9696/Default/2026/1/575272611/NP/LP/RG/260299642/image-1000x1000.jpeg"],
+    badge: "Value Pick",
+    specs: {},
+    desc: "",
+    indiamart: "https://www.indiamart.com/proddetail/concrete-small-shankh-candle-jar-2858507467288.html"
+  },
+  {
+    id: 4,
     name: "Concrete Heart Candle Jar",
     category: "candle-jar",
     categoryLabel: "Candle Jar",
     price: "₹149",
     priceUnit: "/Piece",
-    image: "https://5.imimg.com/data5/WA_9696/Default/2026/1/575272239/WU/CC/ZL/260299642/image-500x500.jpeg",
-    specs: {
-      "Material": "Concrete",
-      "Shape": "Heart"
-    },
-    desc: "Heart-shaped concrete candle jar — romantic, sturdy, and stylish. Makes a thoughtful gift.",
+    image: "https://5.imimg.com/data5/WA_9696/Default/2026/1/575272239/WU/CC/ZL/260299642/image-1000x1000.jpeg",
+    images: ["https://5.imimg.com/data5/WA_9696/Default/2026/1/575272239/WU/CC/ZL/260299642/image-1000x1000.jpeg", "https://5.imimg.com/data5/WA_9696/Default/2026/1/575272227/VD/OU/YD/260299642/image-1000x1000.jpeg", "https://5.imimg.com/data5/WA_9696/Default/2026/1/575272225/XU/WN/ER/260299642/image-1000x1000.jpeg"],
+    badge: "",
+    specs: {},
+    desc: "",
     indiamart: "https://www.indiamart.com/proddetail/concrete-heart-candle-jar-2858507462433.html"
   },
   {
-    id: 15,
+    id: 5,
     name: "Concrete Lotus Candle Jar",
     category: "candle-jar",
     categoryLabel: "Candle Jar",
     price: "₹49",
     priceUnit: "/Piece",
-    image: "https://5.imimg.com/data5/WA_9696/Default/2026/1/575271586/VF/NY/VR/260299642/image-500x500.jpeg",
-    specs: {
-      "Material": "Concrete",
-      "Shape": "Lotus Flower"
-    },
-    desc: "Delicate lotus-shaped concrete candle jar. Inspired by the sacred lotus, bringing calm and beauty to your space.",
+    image: "https://5.imimg.com/data5/WA_9696/Default/2026/1/575271586/VF/NY/VR/260299642/image-1000x1000.jpeg",
+    images: ["https://5.imimg.com/data5/WA_9696/Default/2026/1/575271586/VF/NY/VR/260299642/image-1000x1000.jpeg", "https://5.imimg.com/data5/WA_9696/Default/2026/1/575271577/DW/UN/UD/260299642/image-1000x1000.jpeg", "https://5.imimg.com/data5/SELLER/Default/2026/1/575497444/PC/HY/FP/260299642/image-1000x1000.jpeg"],
+    badge: "Value Pick",
+    specs: {},
+    desc: "",
     indiamart: "https://www.indiamart.com/proddetail/concrete-lotus-candle-jar-2858507447697.html"
   },
-
-  /* ── RESIN TRAYS ── */
+  {
+    id: 6,
+    name: "Geode Rectangular Resin Clock",
+    category: "resin-clock",
+    categoryLabel: "Resin Clock",
+    price: "₹2,200",
+    priceUnit: "/Piece",
+    image: "https://5.imimg.com/data5/WA_9696/Default/2026/1/574302331/YU/DZ/UB/260299642/featuring-delicate-golden-shimmer-suspended-in-a-deep-glossy-black-resin-this-clock-is-giving-off-ma-1000x1000.jpeg",
+    images: ["https://5.imimg.com/data5/WA_9696/Default/2026/1/574302331/YU/DZ/UB/260299642/featuring-delicate-golden-shimmer-suspended-in-a-deep-glossy-black-resin-this-clock-is-giving-off-ma-1000x1000.jpeg", "https://5.imimg.com/data5/SELLER/Default/2026/1/574646347/ZX/FW/ZZ/260299642/rectangle-resin-clock-1000x1000.jpeg", "https://5.imimg.com/data5/SELLER/Default/2026/1/574646549/RH/TP/VG/260299642/rectangle-resin-clock-1000x1000.jpeg"],
+    badge: "Premium",
+    specs: {},
+    desc: "",
+    indiamart: "https://www.indiamart.com/proddetail/geode-rectangular-resin-clock-2858467793655.html"
+  },
+  {
+    id: 7,
+    name: "Ocean Theme Triangle Resin Clock",
+    category: "resin-clock",
+    categoryLabel: "Resin Clock",
+    price: "₹1,999",
+    priceUnit: "/Piece",
+    image: "https://5.imimg.com/data5/WA_9696/Default/2026/1/574303523/LT/DL/PW/260299642/image-1767868420-1263-919950269992-1000x1000.jpeg",
+    images: ["https://5.imimg.com/data5/WA_9696/Default/2026/1/574303523/LT/DL/PW/260299642/image-1767868420-1263-919950269992-1000x1000.jpeg", "https://5.imimg.com/data5/WA_9696/Default/2026/1/574303517/NX/OQ/MC/260299642/image-1767868419-5616-919950269992-1000x1000.jpeg", "https://5.imimg.com/data5/WA_9696/Default/2026/1/574303513/SM/ED/RA/260299642/customised-triangle-shaped-resin-clock-for-my-client-dm-us-for-getting-your-own-customised-clock-1000x1000.jpeg"],
+    badge: "Premium",
+    specs: {},
+    desc: "",
+    indiamart: "https://www.indiamart.com/proddetail/ocean-theme-triangle-resin-clock-2858467806330.html"
+  },
+  {
+    id: 8,
+    name: "Ocean Theme Round Resin Clock",
+    category: "resin-clock",
+    categoryLabel: "Resin Clock",
+    price: "₹1,199",
+    priceUnit: "/Piece",
+    image: "https://5.imimg.com/data5/WA_9696/Default/2026/1/574411333/KK/EU/HL/260299642/image-1000x1000.jpeg",
+    images: ["https://5.imimg.com/data5/WA_9696/Default/2026/1/574411333/KK/EU/HL/260299642/image-1000x1000.jpeg", "https://5.imimg.com/data5/SELLER/Default/2026/1/574665789/MV/ZB/CL/260299642/12-inch-resin-ocean-clock-1000x1000.jpeg", "https://5.imimg.com/data5/SELLER/Default/2026/1/574665987/IM/AS/YG/260299642/12-inch-resin-ocean-clock-1000x1000.jpeg"],
+    badge: "Trending",
+    specs: {},
+    desc: "",
+    indiamart: "https://www.indiamart.com/proddetail/ocean-theme-round-resin-clock-2858468109633.html"
+  },
+  {
+    id: 9,
+    name: "Contemporary Round Resin Clock",
+    category: "resin-clock",
+    categoryLabel: "Resin Clock",
+    price: "₹2,699",
+    priceUnit: "/Piece",
+    image: "https://5.imimg.com/data5/SELLER/Default/2026/1/575732109/SU/HP/CN/260299642/resin-clock-1000x1000.jpeg",
+    images: ["https://5.imimg.com/data5/SELLER/Default/2026/1/575732109/SU/HP/CN/260299642/resin-clock-1000x1000.jpeg", "https://5.imimg.com/data5/WA_9696/Default/2026/1/575552325/NT/WS/IY/260299642/image-1000x1000.jpeg", "https://5.imimg.com/data5/SELLER/Default/2026/1/575732041/BO/DZ/UC/260299642/resin-clock-1000x1000.jpeg"],
+    badge: "Premium",
+    specs: {},
+    desc: "",
+    indiamart: "https://www.indiamart.com/proddetail/contemporary-round-resin-clock-2858523894091.html"
+  },
+  {
+    id: 10,
+    name: "Marble Effect Round Resin Clock",
+    category: "resin-clock",
+    categoryLabel: "Resin Clock",
+    price: "₹3,999",
+    priceUnit: "/Piece",
+    image: "https://5.imimg.com/data5/SELLER/Default/2026/1/575535208/HR/QV/TA/260299642/image-1000x1000.jpeg",
+    images: ["https://5.imimg.com/data5/SELLER/Default/2026/1/575535208/HR/QV/TA/260299642/image-1000x1000.jpeg", "https://5.imimg.com/data5/WA_9696/Default/2026/1/574411930/JJ/MH/UB/260299642/image-1000x1000.jpeg", "https://5.imimg.com/data5/SELLER/Default/2026/1/575535208/HR/QV/TA/260299642/image-1000x1000.jpeg"],
+    badge: "Luxury",
+    specs: {},
+    desc: "",
+    indiamart: "https://www.indiamart.com/proddetail/marble-effect-round-resin-clock-2858508253055.html"
+  },
+  {
+    id: 11,
+    name: "100 g Rose Jar Candle",
+    category: "candle-jar",
+    categoryLabel: "Jar Candle",
+    price: "₹199",
+    priceUnit: "/Piece",
+    image: "https://5.imimg.com/data5/SELLER/Default/2026/1/573765227/TX/IS/PJ/260299642/bell-shaped-glass-jar-aroma-candle-1000x1000.png",
+    images: ["https://5.imimg.com/data5/SELLER/Default/2026/1/573765227/TX/IS/PJ/260299642/bell-shaped-glass-jar-aroma-candle-1000x1000.png", "https://5.imimg.com/data5/SELLER/Default/2026/1/573765240/HD/QN/GO/260299642/bell-shaped-glass-jar-aroma-candle-1000x1000.png", "https://5.imimg.com/data5/SELLER/Default/2026/1/573765450/ND/QA/OA/260299642/bell-shaped-glass-jar-aroma-candle-1000x1000.png"],
+    badge: "",
+    specs: {},
+    desc: "",
+    indiamart: "https://www.indiamart.com/proddetail/100-g-rose-jar-candle-2858405047562.html"
+  },
+  {
+    id: 12,
+    name: "40 g Jasmine Jar Candle",
+    category: "candle-jar",
+    categoryLabel: "Jar Candle",
+    price: "₹149",
+    priceUnit: "/Piece",
+    image: "https://5.imimg.com/data5/SELLER/Default/2026/1/575861652/JB/NI/YG/260299642/40-g-jasmine-jar-candle-1000x1000.png",
+    images: ["https://5.imimg.com/data5/SELLER/Default/2026/1/575861652/JB/NI/YG/260299642/40-g-jasmine-jar-candle-1000x1000.png", "https://5.imimg.com/data5/WA_9696/Default/2026/1/573626403/VP/WN/QM/260299642/image-1000x1000.jpeg", "https://5.imimg.com/data5/SELLER/Default/2026/1/575862202/UX/LR/XA/260299642/40-g-jasmine-jar-candle-1000x1000.png"],
+    badge: "",
+    specs: {},
+    desc: "",
+    indiamart: "https://www.indiamart.com/proddetail/40-g-jasmine-jar-candle-2858405032333.html"
+  },
+  {
+    id: 13,
+    name: "30 g Vanilla Jar Candle",
+    category: "candle-jar",
+    categoryLabel: "Jar Candle",
+    price: "₹75",
+    priceUnit: "/Piece",
+    image: "https://5.imimg.com/data5/SELLER/Default/2026/1/574673627/SV/HU/HL/260299642/glass-jar-soy-wax-candle-1000x1000.png",
+    images: ["https://5.imimg.com/data5/SELLER/Default/2026/1/574673627/SV/HU/HL/260299642/glass-jar-soy-wax-candle-1000x1000.png", "https://5.imimg.com/data5/WA_9696/Default/2026/1/574412441/UL/XH/IC/260299642/mini-soy-wax-candle-1000x1000.jpeg", "https://5.imimg.com/data5/WA_9696/Default/2026/1/574412438/NR/TY/LL/260299642/image-1000x1000.jpeg"],
+    badge: "",
+    specs: {},
+    desc: "",
+    indiamart: "https://www.indiamart.com/proddetail/30-g-vanilla-jar-candle-2858468255212.html"
+  },
+  {
+    id: 14,
+    name: "70 g Vanilla Jar Candle",
+    category: "candle-jar",
+    categoryLabel: "Jar Candle",
+    price: "₹125",
+    priceUnit: "/Piece",
+    image: "https://5.imimg.com/data5/SELLER/Default/2026/1/574680246/GL/WN/ZO/260299642/glass-jar-soy-wax-candle-1000x1000.jpeg",
+    images: ["https://5.imimg.com/data5/SELLER/Default/2026/1/574680246/GL/WN/ZO/260299642/glass-jar-soy-wax-candle-1000x1000.jpeg", "https://5.imimg.com/data5/WA_9696/Default/2026/1/574416678/PX/JP/SQ/260299642/image-1000x1000.jpeg", "https://5.imimg.com/data5/SELLER/Default/2026/1/574679969/RN/EF/OE/260299642/image-1000x1000.jpeg"],
+    badge: "",
+    specs: {},
+    desc: "",
+    indiamart: "https://www.indiamart.com/proddetail/70-g-vanilla-jar-candle-2858468382588.html"
+  },
+  {
+    id: 15,
+    name: "35 g Jasmine Jar Candle",
+    category: "candle-jar",
+    categoryLabel: "Jar Candle",
+    price: "₹85",
+    priceUnit: "/Piece",
+    image: "https://5.imimg.com/data5/SELLER/Default/2026/1/575861547/GP/XV/NS/260299642/35-g-jasmine-jar-candle-1000x1000.png",
+    images: ["https://5.imimg.com/data5/SELLER/Default/2026/1/575861547/GP/XV/NS/260299642/35-g-jasmine-jar-candle-1000x1000.png", "https://5.imimg.com/data5/SELLER/Default/2026/1/575500569/FB/SH/ZS/260299642/twisted-rope-jar-soy-wax-candle-1000x1000.jpeg", "https://5.imimg.com/data5/SELLER/Default/2026/1/575861549/LE/BP/BW/260299642/35-g-jasmine-jar-candle-1000x1000.png"],
+    badge: "",
+    specs: {},
+    desc: "",
+    indiamart: "https://www.indiamart.com/proddetail/35-g-jasmine-jar-candle-2858507511162.html"
+  },
   {
     id: 16,
+    name: "Heart Soy Candle",
+    category: "candles",
+    categoryLabel: "Soy Candle",
+    price: "₹210",
+    priceUnit: "/Piece",
+    image: "https://5.imimg.com/data5/SELLER/Default/2026/1/574298455/TK/YK/MA/260299642/2-1000x1000.png",
+    images: ["https://5.imimg.com/data5/SELLER/Default/2026/1/574298455/TK/YK/MA/260299642/2-1000x1000.png", "https://5.imimg.com/data5/SELLER/Default/2026/1/574298461/WG/VT/HW/260299642/3-1000x1000.png", "https://5.imimg.com/data5/SELLER/Default/2026/1/574298471/DM/WV/SK/260299642/1-1000x1000.png"],
+    badge: "",
+    specs: {},
+    desc: "",
+    indiamart: "https://www.indiamart.com/proddetail/heart-soy-candle-2858440508730.html"
+  },
+  {
+    id: 17,
+    name: "Shankh Soy Candle",
+    category: "candles",
+    categoryLabel: "Soy Candle",
+    price: "₹135",
+    priceUnit: "/Piece",
+    image: "https://5.imimg.com/data5/SELLER/Default/2026/1/574290574/JY/HL/NG/260299642/shankh-soy-candle-1000x1000.png",
+    images: ["https://5.imimg.com/data5/SELLER/Default/2026/1/574290574/JY/HL/NG/260299642/shankh-soy-candle-1000x1000.png", "https://5.imimg.com/data5/WA_9696/Default/2026/1/573844146/XZ/CT/JY/260299642/image-1000x1000.jpeg", "https://5.imimg.com/data5/WA_9696/Default/2026/1/573844139/XR/JQ/NL/260299642/image-1000x1000.jpeg"],
+    badge: "",
+    specs: {},
+    desc: "",
+    indiamart: "https://www.indiamart.com/proddetail/shankh-soy-candle-2858437587088.html"
+  },
+  {
+    id: 18,
+    name: "Boat Soy Candle",
+    category: "candles",
+    categoryLabel: "Soy Candle",
+    price: "₹399",
+    priceUnit: "/Piece",
+    image: "https://5.imimg.com/data5/WA_9696/Default/2026/1/574077733/PV/GR/QV/260299642/image-1000x1000.jpeg",
+    images: ["https://5.imimg.com/data5/WA_9696/Default/2026/1/574077733/PV/GR/QV/260299642/image-1000x1000.jpeg", "https://5.imimg.com/data5/WA_9696/Default/2026/1/574077742/YG/XD/CA/260299642/image-1000x1000.jpeg", "https://5.imimg.com/data5/WA_9696/Default/2026/1/574077760/AV/PH/GD/260299642/image-1000x1000.jpeg"],
+    badge: "",
+    specs: {},
+    desc: "",
+    indiamart: "https://www.indiamart.com/proddetail/boat-soy-candle-2858467715273.html"
+  },
+  {
+    id: 19,
+    name: "Modak Soy Candle",
+    category: "candles",
+    categoryLabel: "Soy Candle",
+    price: "₹29",
+    priceUnit: "/Piece",
+    image: "https://5.imimg.com/data5/SELLER/Default/2026/1/574672722/DK/HF/FE/260299642/24-inches-resin-clock-with-stones-1000x1000.png",
+    images: ["https://5.imimg.com/data5/SELLER/Default/2026/1/574672722/DK/HF/FE/260299642/24-inches-resin-clock-with-stones-1000x1000.png", "https://5.imimg.com/data5/WA_9696/Default/2026/1/574412118/ID/VJ/ED/260299642/image-1000x1000.jpeg", "https://5.imimg.com/data5/WA_9696/Default/2026/1/574412116/WZ/ZC/WL/260299642/image-1000x1000.jpeg"],
+    badge: "Value Pick",
+    specs: {},
+    desc: "",
+    indiamart: "https://www.indiamart.com/proddetail/modak-soy-candle-2858468240212.html"
+  },
+  {
+    id: 20,
+    name: "Tulip Soy Candle",
+    category: "candles",
+    categoryLabel: "Soy Candle",
+    price: "₹199",
+    priceUnit: "/Piece",
+    image: "https://5.imimg.com/data5/WA_9696/Default/2026/1/575304301/QL/MH/JA/260299642/image-1000x1000.jpeg",
+    images: ["https://5.imimg.com/data5/WA_9696/Default/2026/1/575304301/QL/MH/JA/260299642/image-1000x1000.jpeg", "https://5.imimg.com/data5/WA_9696/Default/2026/1/575304311/HP/KW/GW/260299642/image-1000x1000.jpeg", "https://5.imimg.com/data5/WA_9696/Default/2026/1/575304321/JC/XG/LV/260299642/image-1000x1000.jpeg"],
+    badge: "",
+    specs: {},
+    desc: "",
+    indiamart: "https://www.indiamart.com/proddetail/tulip-soy-candle-2858507517312.html"
+  },
+  {
+    id: 21,
+    name: "Clay Boat Scented Candle",
+    category: "candles",
+    categoryLabel: "Scented Candle",
+    price: "₹69",
+    priceUnit: "/Piece",
+    image: "https://5.imimg.com/data5/SELLER/Default/2026/1/575858963/RF/TW/QH/260299642/clay-boat-scented-candle-1000x1000.png",
+    images: ["https://5.imimg.com/data5/SELLER/Default/2026/1/575858963/RF/TW/QH/260299642/clay-boat-scented-candle-1000x1000.png", "https://5.imimg.com/data5/SELLER/Default/2026/1/575858971/NZ/YS/OH/260299642/clay-boat-scented-candle-1000x1000.png", "https://5.imimg.com/data5/SELLER/Default/2026/1/575858979/GE/JW/RE/260299642/clay-boat-scented-candle-1000x1000.png"],
+    badge: "",
+    specs: {},
+    desc: "",
+    indiamart: "https://www.indiamart.com/proddetail/clay-boat-scented-candle-2858405040973.html"
+  },
+  {
+    id: 22,
+    name: "Metal Urli Scented Candle",
+    category: "candles",
+    categoryLabel: "Scented Candle",
+    price: "₹129",
+    priceUnit: "/Piece",
+    image: "https://5.imimg.com/data5/SELLER/Default/2026/1/575857945/VB/AJ/CE/260299642/metal-urli-scented-candle-1000x1000.png",
+    images: ["https://5.imimg.com/data5/SELLER/Default/2026/1/575857945/VB/AJ/CE/260299642/metal-urli-scented-candle-1000x1000.png", "https://5.imimg.com/data5/SELLER/Default/2026/1/574293146/DS/QI/SZ/260299642/metal-urli-soy-aroma-candle-1000x1000.png", "https://5.imimg.com/data5/WA_9696/Default/2026/1/573846014/VE/XC/WW/260299642/image-1000x1000.jpeg"],
+    badge: "",
+    specs: {},
+    desc: "",
+    indiamart: "https://www.indiamart.com/proddetail/metal-urli-scented-candle-2858440369212.html"
+  },
+  {
+    id: 23,
+    name: "Wooden Scented Candle",
+    category: "candles",
+    categoryLabel: "Scented Candle",
+    price: "₹449",
+    priceUnit: "/Piece",
+    image: "https://5.imimg.com/data5/SELLER/Default/2026/1/574640179/NP/HT/HU/260299642/untitled-design-2026-01-09t170859-632-1000x1000.png",
+    images: ["https://5.imimg.com/data5/SELLER/Default/2026/1/574640179/NP/HT/HU/260299642/untitled-design-2026-01-09t170859-632-1000x1000.png", "https://5.imimg.com/data5/WA_9696/Default/2026/1/574076751/CI/QU/HL/260299642/image-1000x1000.jpeg", "https://5.imimg.com/data5/WA_9696/Default/2026/1/574076750/RH/BG/AN/260299642/the-sandalwood-provides-a-rich-woody-and-grounding-base-while-the-cinnamon-and-other-spices-like-1000x1000.jpeg"],
+    badge: "",
+    specs: {},
+    desc: "",
+    indiamart: "https://www.indiamart.com/proddetail/wooden-scented-candle-2858467693488.html"
+  },
+  {
+    id: 24,
+    name: "Wooden Urli Scented Candle",
+    category: "candles",
+    categoryLabel: "Scented Candle",
+    price: "₹210",
+    priceUnit: "/Piece",
+    image: "https://5.imimg.com/data5/SELLER/Default/2026/1/574642914/QR/DO/ZH/260299642/wooden-urli-aroma-candles-1000x1000.png",
+    images: ["https://5.imimg.com/data5/SELLER/Default/2026/1/574642914/QR/DO/ZH/260299642/wooden-urli-aroma-candles-1000x1000.png", "https://5.imimg.com/data5/SELLER/Default/2026/1/574644393/LA/KD/OU/260299642/wooden-urli-aroma-candles-1000x1000.png", "https://5.imimg.com/data5/SELLER/Default/2026/1/574644390/TC/LE/WS/260299642/wooden-urli-aroma-candles-1000x1000.png"],
+    badge: "",
+    specs: {},
+    desc: "",
+    indiamart: "https://www.indiamart.com/proddetail/wooden-urli-scented-candle-2858467758397.html"
+  },
+  {
+    id: 25,
+    name: "Concrete Big Shankh Scented Candle",
+    category: "candle-jar",
+    categoryLabel: "Candle Jar",
+    price: "₹299",
+    priceUnit: "/Piece",
+    image: "https://5.imimg.com/data5/SELLER/Default/2026/1/575859632/PO/ZW/EO/260299642/concrete-big-shankh-scented-candle-1000x1000.png",
+    images: ["https://5.imimg.com/data5/SELLER/Default/2026/1/575859632/PO/ZW/EO/260299642/concrete-big-shankh-scented-candle-1000x1000.png", "https://5.imimg.com/data5/SELLER/Default/2026/1/575496111/FX/SW/CM/260299642/big-shankh-aroma-candle-1000x1000.jpeg", "https://5.imimg.com/data5/SELLER/Default/2026/1/575859635/DN/EP/GK/260299642/concrete-big-shankh-scented-candle-1000x1000.png"],
+    badge: "",
+    specs: {},
+    desc: "",
+    indiamart: "https://www.indiamart.com/proddetail/concrete-big-shankh-scented-candle-2858507429112.html"
+  },
+  {
+    id: 26,
+    name: "5 Inch Concrete Decorative Tray",
+    category: "candle-jar",
+    categoryLabel: "Candle Jar",
+    price: "₹199",
+    priceUnit: "/Piece",
+    image: "https://5.imimg.com/data5/WA_9696/Default/2026/1/573555010/OT/FC/TG/260299642/image-1000x1000.jpeg",
+    images: ["https://5.imimg.com/data5/WA_9696/Default/2026/1/573555010/OT/FC/TG/260299642/image-1000x1000.jpeg", "https://5.imimg.com/data5/WA_9696/Default/2026/1/573555014/LH/ZE/YI/260299642/image-1000x1000.jpeg", "https://5.imimg.com/data5/SELLER/Default/2026/1/575862804/FL/RN/US/260299642/5-inch-concrete-decorative-tray-1000x1000.jpeg"],
+    badge: "",
+    specs: {},
+    desc: "",
+    indiamart: "https://www.indiamart.com/proddetail/5-inch-concrete-decorative-tray-2858284271012.html"
+  },
+  {
+    id: 27,
+    name: "7.8 Inch Concrete Decorative Tray",
+    category: "candle-jar",
+    categoryLabel: "Candle Jar",
+    price: "₹185",
+    priceUnit: "/Piece",
+    image: "https://5.imimg.com/data5/SELLER/Default/2026/1/574662639/ZT/AO/GY/260299642/1-1000x1000.png",
+    images: ["https://5.imimg.com/data5/SELLER/Default/2026/1/574662639/ZT/AO/GY/260299642/1-1000x1000.png", "https://5.imimg.com/data5/SELLER/Default/2026/1/574662642/KW/XS/QK/260299642/2-1000x1000.png", "https://5.imimg.com/data5/WA_9696/Default/2026/1/574409259/NQ/XJ/EG/260299642/image-1000x1000.jpeg"],
+    badge: "",
+    specs: {},
+    desc: "",
+    indiamart: "https://www.indiamart.com/proddetail/7-8-inch-concrete-decorative-tray-2858468056112.html"
+  },
+  {
+    id: 28,
+    name: "11 Inch Concrete Decorative Tray",
+    category: "candle-jar",
+    categoryLabel: "Candle Jar",
+    price: "₹649",
+    priceUnit: "/Piece",
+    image: "https://5.imimg.com/data5/WA_9696/Default/2026/1/574303056/WC/IR/AQ/260299642/image-1767868370-5847-919950269992-1000x1000.jpeg",
+    images: ["https://5.imimg.com/data5/WA_9696/Default/2026/1/574303056/WC/IR/AQ/260299642/image-1767868370-5847-919950269992-1000x1000.jpeg", "https://5.imimg.com/data5/WA_9696/Default/2026/1/574303066/DK/UP/LD/260299642/image-1767868371-5309-919950269992-1000x1000.jpeg", "https://5.imimg.com/data5/WA_9696/Default/2026/1/574303056/WC/IR/AQ/260299642/image-1767868370-5847-919950269992-1000x1000.jpeg"],
+    badge: "",
+    specs: {},
+    desc: "",
+    indiamart: "https://www.indiamart.com/proddetail/11-inch-concrete-decorative-tray-2858467813733.html"
+  },
+  {
+    id: 29,
+    name: "8 Inch Concrete Decorative Tray",
+    category: "candle-jar",
+    categoryLabel: "Candle Jar",
+    price: "₹199",
+    priceUnit: "/Piece",
+    image: "https://5.imimg.com/data5/WA_9696/Default/2026/1/575274579/GI/JA/JY/260299642/image-1000x1000.jpeg",
+    images: ["https://5.imimg.com/data5/WA_9696/Default/2026/1/575274579/GI/JA/JY/260299642/image-1000x1000.jpeg", "https://5.imimg.com/data5/WA_9696/Default/2026/1/575274569/FZ/QM/SB/260299642/image-1000x1000.jpeg", "https://5.imimg.com/data5/WA_9696/Default/2026/1/575274560/II/JV/SY/260299642/image-1000x1000.jpeg"],
+    badge: "",
+    specs: {},
+    desc: "",
+    indiamart: "https://www.indiamart.com/proddetail/8-inch-concrete-decorative-tray-2858507484130.html"
+  },
+  {
+    id: 30,
     name: "10 Inch Floral Epoxy Resin Tray",
     category: "resin-tray",
     categoryLabel: "Resin Tray",
     price: "₹1,499",
     priceUnit: "/Piece",
-    image: "https://5.imimg.com/data5/WA_9696/Default/2026/1/574411461/PN/KA/SQ/260299642/image-500x500.jpeg",
-    specs: {
-      "Base Material": "Resin Only",
-      "Style": "Floral",
-      "Shape": "Round",
-      "Length": "10 Inch"
-    },
-    desc: "A stunning 10-inch round floral epoxy resin tray. Real dried flowers suspended in clear resin — nature meets art.",
+    image: "https://5.imimg.com/data5/WA_9696/Default/2026/1/574411461/PN/KA/SQ/260299642/image-1000x1000.jpeg",
+    images: ["https://5.imimg.com/data5/WA_9696/Default/2026/1/574411461/PN/KA/SQ/260299642/image-1000x1000.jpeg", "https://5.imimg.com/data5/WA_9696/Default/2026/1/574411471/PM/NH/DJ/260299642/image-1000x1000.jpeg", "https://5.imimg.com/data5/WA_9696/Default/2026/1/574411464/NV/JK/MK/260299642/image-1000x1000.jpeg"],
+    badge: "Elegant",
+    specs: {},
+    desc: "",
     indiamart: "https://www.indiamart.com/proddetail/10-inch-floral-epoxy-resin-tray-2858468131555.html"
   },
   {
-    id: 17,
-    name: "5 Inch Concrete Decorative Tray",
+    id: 31,
+    name: "12 Inch Marble Effect Epoxy Resin Tray",
     category: "resin-tray",
-    categoryLabel: "Decorative Tray",
-    price: "₹199",
+    categoryLabel: "Resin Tray",
+    price: "₹1,899",
     priceUnit: "/Piece",
-    image: "https://5.imimg.com/data5/WA_9696/Default/2026/1/573555010/OT/FC/TG/260299642/image-500x500.jpeg",
-    specs: {
-      "Material": "Concrete",
-      "Size": "5 Inch",
-      "Shape": "Round",
-      "Design": "Bubble"
-    },
-    desc: "Compact 5-inch concrete decorative tray with a modern bubble texture design. Multipurpose — use as a candle tray, ring dish, or display platform.",
-    indiamart: "https://www.indiamart.com/proddetail/5-inch-concrete-decorative-tray-2858284271012.html"
+    image: "https://5.imimg.com/data5/WA_9696/Default/2026/1/575543192/DE/TC/XW/260299642/image-1000x1000.jpeg",
+    images: ["https://5.imimg.com/data5/WA_9696/Default/2026/1/575543192/DE/TC/XW/260299642/image-1000x1000.jpeg", "https://5.imimg.com/data5/WA_9696/Default/2026/1/575543198/OF/TP/CR/260299642/image-1000x1000.jpeg", "https://5.imimg.com/data5/WA_9696/Default/2026/1/575543196/BU/WI/LR/260299642/image-1000x1000.jpeg"],
+    badge: "Luxury",
+    specs: {},
+    desc: "",
+    indiamart: "https://www.indiamart.com/proddetail/12-inch-marble-effect-epoxy-resin-tray-2858523889062.html"
   },
-
-  /* ── OTHER ── */
   {
-    id: 18,
+    id: 32,
+    name: "12 Inch Floral Epoxy Resin Tray",
+    category: "resin-tray",
+    categoryLabel: "Resin Tray",
+    price: "₹1,099",
+    priceUnit: "/Piece",
+    image: "https://5.imimg.com/data5/SELLER/Default/2026/1/574651453/DA/DD/XJ/260299642/wooden-resin-tray-set-of-2-1000x1000.png",
+    images: ["https://5.imimg.com/data5/SELLER/Default/2026/1/574651453/DA/DD/XJ/260299642/wooden-resin-tray-set-of-2-1000x1000.png", "https://5.imimg.com/data5/WA_9696/Default/2026/1/574325926/PS/FO/BE/260299642/image-1000x1000.jpeg", "https://5.imimg.com/data5/SELLER/Default/2026/1/574651453/DA/DD/XJ/260299642/wooden-resin-tray-set-of-2-1000x1000.png"],
+    badge: "Elegant",
+    specs: {},
+    desc: "",
+    indiamart: "https://www.indiamart.com/proddetail/12-inch-floral-epoxy-resin-tray-2858467863862.html"
+  },
+  {
+    id: 33,
+    name: "8 Inch Pigmented Epoxy Resin Tray",
+    category: "resin-tray",
+    categoryLabel: "Resin Tray",
+    price: "₹599",
+    priceUnit: "/Piece",
+    image: "https://5.imimg.com/data5/WA_9696/Default/2026/1/574416161/ER/WX/MB/260299642/image-1000x1000.jpeg",
+    images: ["https://5.imimg.com/data5/WA_9696/Default/2026/1/574416161/ER/WX/MB/260299642/image-1000x1000.jpeg", "https://5.imimg.com/data5/WA_9696/Default/2026/1/574416170/RW/KZ/VP/260299642/image-1000x1000.jpeg", "https://5.imimg.com/data5/WA_9696/Default/2026/1/574416168/BK/TT/RB/260299642/image-1000x1000.jpeg"],
+    badge: "",
+    specs: {},
+    desc: "",
+    indiamart: "https://www.indiamart.com/proddetail/8-inch-pigmented-epoxy-resin-tray-2858468370355.html"
+  },
+  {
+    id: 34,
+    name: "10 Inch Resin Pooja Thali",
+    category: "resin-tray",
+    categoryLabel: "Pooja Thali",
+    price: "₹999",
+    priceUnit: "/Piece",
+    image: "https://5.imimg.com/data5/SELLER/Default/2026/1/574754529/MZ/CB/ZS/260299642/10-inch-resin-pooja-thali-1000x1000.jpeg",
+    images: ["https://5.imimg.com/data5/SELLER/Default/2026/1/574754529/MZ/CB/ZS/260299642/10-inch-resin-pooja-thali-1000x1000.jpeg", "https://5.imimg.com/data5/SELLER/Default/2026/1/574754529/MZ/CB/ZS/260299642/10-inch-resin-pooja-thali-1000x1000.jpeg", "https://5.imimg.com/data5/SELLER/Default/2026/1/574754529/MZ/CB/ZS/260299642/10-inch-resin-pooja-thali-1000x1000.jpeg"],
+    badge: "",
+    specs: {},
+    desc: "",
+    indiamart: "https://www.indiamart.com/proddetail/10-inch-resin-pooja-thali-2858470008991.html"
+  },
+  {
+    id: 35,
+    name: "8 Inch Resin Pooja Thali",
+    category: "resin-tray",
+    categoryLabel: "Pooja Thali",
+    price: "₹699",
+    priceUnit: "/Piece",
+    image: "https://5.imimg.com/data5/WA_9696/Default/2026/1/575556726/WB/EA/KE/260299642/image-1000x1000.jpeg",
+    images: ["https://5.imimg.com/data5/WA_9696/Default/2026/1/575556726/WB/EA/KE/260299642/image-1000x1000.jpeg", "https://5.imimg.com/data5/WA_9696/Default/2026/1/575556705/QZ/HD/CK/260299642/image-1000x1000.jpeg", "https://5.imimg.com/data5/WA_9696/Default/2026/1/575556726/WB/EA/KE/260299642/image-1000x1000.jpeg"],
+    badge: "",
+    specs: {},
+    desc: "",
+    indiamart: "https://www.indiamart.com/proddetail/8-inch-resin-pooja-thali-2858523902548.html"
+  },
+  {
+    id: 36,
+    name: "6 Inch Resin Pooja Thali",
+    category: "resin-tray",
+    categoryLabel: "Pooja Thali",
+    price: "₹299",
+    priceUnit: "/Piece",
+    image: "https://5.imimg.com/data5/SELLER/Default/2026/1/574753998/QC/LH/ZC/260299642/resin-pooja-thali-in-6-inches-1000x1000.jpeg",
+    images: ["https://5.imimg.com/data5/SELLER/Default/2026/1/574753998/QC/LH/ZC/260299642/resin-pooja-thali-in-6-inches-1000x1000.jpeg", "https://5.imimg.com/data5/SELLER/Default/2026/1/574753998/QC/LH/ZC/260299642/resin-pooja-thali-in-6-inches-1000x1000.jpeg", "https://5.imimg.com/data5/SELLER/Default/2026/1/574753998/QC/LH/ZC/260299642/resin-pooja-thali-in-6-inches-1000x1000.jpeg"],
+    badge: "",
+    specs: {},
+    desc: "",
+    indiamart: "https://www.indiamart.com/proddetail/6-inch-resin-pooja-thali-2858470001433.html"
+  },
+  {
+    id: 37,
+    name: "1.5 Inch Resin Letter Keychain",
+    category: "other",
+    categoryLabel: "Keychain",
+    price: "₹79",
+    priceUnit: "/Piece",
+    image: "https://5.imimg.com/data5/WA_9696/Default/2026/1/575719123/QT/FA/DL/260299642/image-1000x1000.jpeg",
+    images: ["https://5.imimg.com/data5/WA_9696/Default/2026/1/575719123/QT/FA/DL/260299642/image-1000x1000.jpeg", "https://5.imimg.com/data5/WA_9696/Default/2026/1/575724535/LU/AN/BO/260299642/image-1000x1000.jpeg", "https://5.imimg.com/data5/WA_9696/Default/2026/1/575719128/EE/YC/UX/260299642/image-1000x1000.jpeg"],
+    badge: "",
+    specs: {},
+    desc: "",
+    indiamart: "https://www.indiamart.com/proddetail/1-5-inch-resin-letter-keychain-2858524411662.html"
+  },
+  {
+    id: 38,
+    name: "2 Inch Resin Letter Keychain",
+    category: "other",
+    categoryLabel: "Keychain",
+    price: "₹79",
+    priceUnit: "/Piece",
+    image: "https://5.imimg.com/data5/SELLER/Default/2026/1/575725094/NV/PV/WW/260299642/epoxy-resin-keychain-1000x1000.jpeg",
+    images: ["https://5.imimg.com/data5/SELLER/Default/2026/1/575725094/NV/PV/WW/260299642/epoxy-resin-keychain-1000x1000.jpeg", "https://5.imimg.com/data5/WA_9696/Default/2026/1/575719120/YF/JI/AN/260299642/image-1000x1000.jpeg", "https://5.imimg.com/data5/WA_9696/Default/2026/1/575719111/KW/OS/VJ/260299642/image-1000x1000.jpeg"],
+    badge: "",
+    specs: {},
+    desc: "",
+    indiamart: "https://www.indiamart.com/proddetail/2-inch-resin-letter-keychain-2858524413955.html"
+  },
+  {
+    id: 39,
     name: "Ombre Resin Clutch Bag",
     category: "other",
-    categoryLabel: "Resin Art",
+    categoryLabel: "Resin Bag",
     price: "₹1,350",
     priceUnit: "/Piece",
-    image: "https://5.imimg.com/data5/WA_9696/Default/2026/1/574413098/FW/XO/YX/260299642/image-500x500.jpeg",
-    badge: "Unique",
-    specs: {
-      "Outer Material": "Resin",
-      "Occasion": "Evening, Wedding, Bridal",
-      "Color": "Green Ombre",
-      "Pattern": "Ombre"
-    },
-    desc: "A showstopping ombre resin clutch bag. Perfect for weddings, receptions, and evening events. One-of-a-kind handcrafted piece.",
+    image: "https://5.imimg.com/data5/WA_9696/Default/2026/1/574413098/FW/XO/YX/260299642/image-1000x1000.jpeg",
+    images: ["https://5.imimg.com/data5/WA_9696/Default/2026/1/574413098/FW/XO/YX/260299642/image-1000x1000.jpeg", "https://5.imimg.com/data5/SELLER/Default/2026/1/574676219/VX/SU/UI/260299642/resin-pooja-thali-1000x1000.jpeg", "https://5.imimg.com/data5/SELLER/Default/2026/1/575862945/KW/WU/AA/260299642/ombre-resin-clutch-bag-1000x1000.jpeg"],
+    badge: "",
+    specs: {},
+    desc: "",
     indiamart: "https://www.indiamart.com/proddetail/ombre-resin-clutch-bag-2858468318997.html"
   },
   {
-    id: 19,
+    id: 40,
+    name: "Marble Effect Resin Clutch Bag",
+    category: "other",
+    categoryLabel: "Resin Bag",
+    price: "₹1,299",
+    priceUnit: "/Piece",
+    image: "https://5.imimg.com/data5/SELLER/Default/2026/1/575728282/IZ/TO/XL/260299642/image-1000x1000.jpeg",
+    images: ["https://5.imimg.com/data5/SELLER/Default/2026/1/575728282/IZ/TO/XL/260299642/image-1000x1000.jpeg", "https://5.imimg.com/data5/SELLER/Default/2026/1/575728179/AF/SY/GH/260299642/image-1000x1000.jpeg", "https://5.imimg.com/data5/SELLER/Default/2026/1/575728379/SC/YG/UL/260299642/image-1000x1000.jpeg"],
+    badge: "Luxury",
+    specs: {},
+    desc: "",
+    indiamart: "https://www.indiamart.com/proddetail/marble-effect-resin-clutch-bag-2858524472688.html"
+  },
+  {
+    id: 41,
+    name: "5 Inch Concrete Serving Tray",
+    category: "candle-jar",
+    categoryLabel: "Candle Jar",
+    price: "₹179",
+    priceUnit: "/Piece",
+    image: "https://5.imimg.com/data5/WA_9696/Default/2026/1/573567073/XP/AU/GK/260299642/image-1000x1000.jpeg",
+    images: ["https://5.imimg.com/data5/WA_9696/Default/2026/1/573567073/XP/AU/GK/260299642/image-1000x1000.jpeg", "https://5.imimg.com/data5/WA_9696/Default/2026/1/573567069/HN/XX/GN/260299642/image-1000x1000.jpeg", "https://5.imimg.com/data5/WA_9696/Default/2026/1/573567065/FG/FD/MX/260299642/image-1000x1000.jpeg"],
+    badge: "",
+    specs: {},
+    desc: "",
+    indiamart: "https://www.indiamart.com/proddetail/5-inch-concrete-serving-tray-2858284271233.html"
+  },
+  {
+    id: 42,
+    name: "7 Inch Concrete Serving Tray",
+    category: "candle-jar",
+    categoryLabel: "Candle Jar",
+    price: "₹169",
+    priceUnit: "/Piece",
+    image: "https://5.imimg.com/data5/WA_9696/Default/2026/1/573555057/JP/TO/JL/260299642/image-1000x1000.jpeg",
+    images: ["https://5.imimg.com/data5/WA_9696/Default/2026/1/573555057/JP/TO/JL/260299642/image-1000x1000.jpeg", "https://5.imimg.com/data5/WA_9696/Default/2026/1/573555047/SY/WP/YE/260299642/image-1000x1000.jpeg", "https://5.imimg.com/data5/WA_9696/Default/2026/1/573546792/RA/II/TM/260299642/image-1000x1000.jpeg"],
+    badge: "",
+    specs: {},
+    desc: "",
+    indiamart: "https://www.indiamart.com/proddetail/7-inch-concrete-serving-tray-2858284271133.html"
+  },
+  {
+    id: 43,
     name: "Round Epoxy Resin Table",
     category: "other",
     categoryLabel: "Resin Furniture",
     price: "₹999",
     priceUnit: "/Piece",
-    image: "https://5.imimg.com/data5/WA_9696/Default/2026/1/574415653/IX/CR/CG/260299642/image-500x500.jpeg",
-    specs: {
-      "Shape": "Round",
-      "Top Material": "Wood & Epoxy",
-      "Size": "Medium",
-      "Wood Type": "Sheesham Wood"
-    },
-    desc: "A gorgeous round epoxy resin table combining sheesham wood and flowing epoxy. A centrepiece for any living space.",
+    image: "https://5.imimg.com/data5/WA_9696/Default/2026/1/574415653/IX/CR/CG/260299642/image-1000x1000.jpeg",
+    images: ["https://5.imimg.com/data5/WA_9696/Default/2026/1/574415653/IX/CR/CG/260299642/image-1000x1000.jpeg", "https://5.imimg.com/data5/WA_9696/Default/2026/1/574415646/NJ/TW/ZB/260299642/image-1000x1000.jpeg", "https://5.imimg.com/data5/WA_9696/Default/2026/1/574415657/CZ/CK/CN/260299642/image-1000x1000.jpeg"],
+    badge: "",
+    specs: {},
+    desc: "",
     indiamart: "https://www.indiamart.com/proddetail/round-epoxy-resin-table-2858468356697.html"
-  }
-
-  /*
-  ──────────────────────────────────────────
-  ADD YOUR NEXT PRODUCT HERE — copy a block
-  and change the details. Don't forget the
-  comma at the end of the previous block!
-  ──────────────────────────────────────────
-
-  ,{
-    id: 20,
-    name: "Your Product Name",
-    category: "candles",           // candles | resin-clock | resin-tray | candle-jar | other
-    categoryLabel: "Category Label",
-    price: "₹XXX",
+  },
+  {
+    id: 44,
+    name: "Epoxy Resin Coffee Tables",
+    category: "other",
+    categoryLabel: "Home Decor",
+    price: "₹7,500",
+    priceUnit: "/sq ft",
+    image: "https://5.imimg.com/data5/ANDROID/Default/2026/2/581638862/IA/FV/DB/260299642/product-jpeg-1000x1000.jpg",
+    images: ["https://5.imimg.com/data5/ANDROID/Default/2026/2/581638862/IA/FV/DB/260299642/product-jpeg-1000x1000.jpg", "https://5.imimg.com/data5/ANDROID/Default/2026/2/581638885/NC/FX/UQ/260299642/product-jpeg-1000x1000.jpg", "https://5.imimg.com/data5/ANDROID/Default/2026/2/585364420/VV/TE/NM/260299642/product-jpeg-1000x1000.jpg"],
+    badge: "Luxury",
+    specs: {},
+    desc: "",
+    indiamart: "https://www.indiamart.com/proddetail/epoxy-resin-coffee-tables-2858765584133.html"
+  },
+  {
+    id: 45,
+    name: "350 ml Round concrete Jar",
+    category: "candle-jar",
+    categoryLabel: "Candle Jar",
+    price: "₹175",
     priceUnit: "/Piece",
-    image: "https://your-image-url.jpg",
-    badge: "",                     // optional: "Bestseller", "New", "Premium", etc.
-    specs: {
-      "Key 1": "Value 1",
-      "Key 2": "Value 2"
-    },
-    desc: "Product description here.",
-    indiamart: "https://www.indiamart.com/proddetail/your-product-url"
+    image: "https://5.imimg.com/data5/SELLER/Default/2026/1/574657123/OX/AL/NM/260299642/concrete-cylendrical-jars-with-lid-1000x1000.png",
+    images: ["https://5.imimg.com/data5/SELLER/Default/2026/1/574657123/OX/AL/NM/260299642/concrete-cylendrical-jars-with-lid-1000x1000.png", "https://5.imimg.com/data5/WA_9696/Default/2026/1/574408880/EJ/BS/KH/260299642/image-1000x1000.jpeg", "https://5.imimg.com/data5/WA_9696/Default/2026/1/574408883/AZ/ZX/LS/260299642/image-1000x1000.jpeg"],
+    badge: "",
+    specs: {},
+    desc: "",
+    indiamart: ""
+  },
+  {
+    id: 46,
+    name: "250 ml Cylindrical Ceramic Jar",
+    category: "other",
+    categoryLabel: "Home Decor",
+    price: "₹149",
+    priceUnit: "/Piece",
+    image: "https://5.imimg.com/data5/SELLER/Default/2026/1/574660177/WL/YA/RE/260299642/untitled-design-2026-01-09t174226-828-1000x1000.png",
+    images: ["https://5.imimg.com/data5/SELLER/Default/2026/1/574660177/WL/YA/RE/260299642/untitled-design-2026-01-09t174226-828-1000x1000.png", "https://5.imimg.com/data5/WA_9696/Default/2026/1/574409014/DM/FQ/QT/260299642/image-1000x1000.jpeg", "https://5.imimg.com/data5/WA_9696/Default/2026/1/574409010/IO/SQ/YH/260299642/image-1000x1000.jpeg"],
+    badge: "",
+    specs: {},
+    desc: "",
+    indiamart: ""
+  },
+  {
+    id: 47,
+    name: "Ocean Theme Resin Coaster",
+    category: "other",
+    categoryLabel: "Resin Coaster",
+    price: "₹129",
+    priceUnit: "/Set",
+    image: "https://5.imimg.com/data5/WA_9696/Default/2026/1/574416947/KM/OL/ZF/260299642/image-1000x1000.jpeg",
+    images: ["https://5.imimg.com/data5/WA_9696/Default/2026/1/574416947/KM/OL/ZF/260299642/image-1000x1000.jpeg", "https://5.imimg.com/data5/WA_9696/Default/2026/1/574416949/RW/BR/CO/260299642/image-1000x1000.jpeg", "https://5.imimg.com/data5/WA_9696/Default/2026/1/574416947/KM/OL/ZF/260299642/image-1000x1000.jpeg"],
+    badge: "Trending",
+    specs: {},
+    desc: "",
+    indiamart: "https://www.indiamart.com/proddetail/ocean-theme-resin-coaster-2858468408691.html"
+  },
+  {
+    id: 48,
+    name: "Glitter Resin Coaster",
+    category: "other",
+    categoryLabel: "Resin Coaster",
+    price: "₹115",
+    priceUnit: "/Set",
+    image: "https://5.imimg.com/data5/WA_9696/Default/2026/1/575558897/NM/OE/DF/260299642/image-1000x1000.jpeg",
+    images: ["https://5.imimg.com/data5/WA_9696/Default/2026/1/575558897/NM/OE/DF/260299642/image-1000x1000.jpeg", "https://5.imimg.com/data5/WA_9696/Default/2026/1/575558888/HO/NS/CT/260299642/image-1000x1000.jpeg", "https://5.imimg.com/data5/WA_9696/Default/2026/1/575558897/NM/OE/DF/260299642/image-1000x1000.jpeg"],
+    badge: "",
+    specs: {},
+    desc: "",
+    indiamart: "https://www.indiamart.com/proddetail/glitter-resin-coaster-2858523906955.html"
+  },
+  {
+    id: 49,
+    name: "2.5 Inch Concrete T Light Candle Holder",
+    category: "candle-jar",
+    categoryLabel: "Candle Jar",
+    price: "₹69",
+    priceUnit: "/Piece",
+    image: "https://5.imimg.com/data5/WA_9696/Default/2026/1/575303422/MA/PX/MP/260299642/image-1000x1000.jpeg",
+    images: ["https://5.imimg.com/data5/WA_9696/Default/2026/1/575303422/MA/PX/MP/260299642/image-1000x1000.jpeg", "https://5.imimg.com/data5/WA_9696/Default/2026/1/575303412/YG/VU/MU/260299642/image-1000x1000.jpeg", "https://5.imimg.com/data5/WA_9696/Default/2026/1/575303402/UW/CZ/BS/260299642/image-1000x1000.jpeg"],
+    badge: "",
+    specs: {},
+    desc: "",
+    indiamart: "https://www.indiamart.com/proddetail/2-5-inch-concrete-t-light-candle-holder-2858507500612.html"
+  },
+  {
+    id: 50,
+    name: "4 Inch Concrete T Light Candle Holder",
+    category: "candle-jar",
+    categoryLabel: "Candle Jar",
+    price: "₹125",
+    priceUnit: "/Piece",
+    image: "https://5.imimg.com/data5/SELLER/Default/2026/1/575693862/CF/MT/RD/260299642/image-1000x1000.jpeg",
+    images: ["https://5.imimg.com/data5/SELLER/Default/2026/1/575693862/CF/MT/RD/260299642/image-1000x1000.jpeg", "https://5.imimg.com/data5/WA_9696/Default/2026/1/575557147/ZS/TN/ZP/260299642/image-1000x1000.jpeg", "https://5.imimg.com/data5/SELLER/Default/2026/1/575693862/CF/MT/RD/260299642/image-1000x1000.jpeg"],
+    badge: "",
+    specs: {},
+    desc: "",
+    indiamart: "https://www.indiamart.com/proddetail/4-inch-concrete-t-light-candle-holder-2858523900712.html"
+  },
+  {
+    id: 51,
+    name: "Resin Gayatri Mantra Frame",
+    category: "other",
+    categoryLabel: "Resin Art",
+    price: "₹1,799",
+    priceUnit: "/Piece",
+    image: "https://5.imimg.com/data5/SELLER/Default/2026/1/574653405/CY/YC/OM/260299642/image-1000x1000.jpeg",
+    images: ["https://5.imimg.com/data5/SELLER/Default/2026/1/574653405/CY/YC/OM/260299642/image-1000x1000.jpeg", "https://5.imimg.com/data5/WA_9696/Default/2026/1/574413621/JC/FH/JK/260299642/image-1000x1000.jpeg", "https://5.imimg.com/data5/SELLER/Default/2026/1/574653405/CY/YC/OM/260299642/image-1000x1000.jpeg"],
+    badge: "",
+    specs: {},
+    desc: "",
+    indiamart: "https://www.indiamart.com/proddetail/resin-gayatri-mantra-frame-2858467901688.html"
+  },
+  {
+    id: 52,
+    name: "Resin Ganesh Mantra Frame",
+    category: "other",
+    categoryLabel: "Resin Art",
+    price: "₹2,199",
+    priceUnit: "/Piece",
+    image: "https://5.imimg.com/data5/WA_9696/Default/2026/1/574408749/DK/GN/OL/260299642/image-1000x1000.jpeg",
+    images: ["https://5.imimg.com/data5/WA_9696/Default/2026/1/574408749/DK/GN/OL/260299642/image-1000x1000.jpeg", "https://5.imimg.com/data5/WA_9696/Default/2026/1/574408749/DK/GN/OL/260299642/image-1000x1000.jpeg", "https://5.imimg.com/data5/WA_9696/Default/2026/1/574408749/DK/GN/OL/260299642/image-1000x1000.jpeg"],
+    badge: "Premium",
+    specs: {},
+    desc: "",
+    indiamart: "https://www.indiamart.com/proddetail/resin-ganesh-mantra-frame-2858467883655.html"
+  },
+  {
+    id: 53,
+    name: "Sheesham Wood Chopping Board",
+    category: "other",
+    categoryLabel: "Home Decor",
+    price: "₹1,999",
+    priceUnit: "/Piece",
+    image: "https://5.imimg.com/data5/WA_9696/Default/2026/1/574411662/YF/HE/RK/260299642/image-1000x1000.jpeg",
+    images: ["https://5.imimg.com/data5/WA_9696/Default/2026/1/574411662/YF/HE/RK/260299642/image-1000x1000.jpeg", "https://5.imimg.com/data5/WA_9696/Default/2026/1/574411661/OV/NN/QA/260299642/image-1000x1000.jpeg", "https://5.imimg.com/data5/WA_9696/Default/2026/1/574411659/GG/MI/EY/260299642/image-1000x1000.jpeg"],
+    badge: "Premium",
+    specs: {},
+    desc: "",
+    indiamart: "https://www.indiamart.com/proddetail/sheesham-wood-chopping-board-2858468192397.html"
+  },
+  {
+    id: 54,
+    name: "Concrete Vase Tray Set",
+    category: "candle-jar",
+    categoryLabel: "Candle Jar",
+    price: "₹449",
+    priceUnit: "/Piece",
+    image: "https://5.imimg.com/data5/WA_9696/Default/2026/1/573564008/TM/UB/TE/260299642/image-1000x1000.jpeg",
+    images: ["https://5.imimg.com/data5/WA_9696/Default/2026/1/573564008/TM/UB/TE/260299642/image-1000x1000.jpeg", "https://5.imimg.com/data5/WA_9696/Default/2026/1/573564023/NB/RC/WK/260299642/image-1000x1000.jpeg", "https://5.imimg.com/data5/WA_9696/Default/2026/1/573564018/TT/IK/EP/260299642/image-1000x1000.jpeg"],
+    badge: "",
+    specs: {},
+    desc: "",
+    indiamart: "https://www.indiamart.com/proddetail/concrete-vase-tray-set-2858405092962.html"
+  },
+  {
+    id: 55,
+    name: "Small Jar Soy Wax Candle",
+    category: "other",
+    categoryLabel: "Home Decor",
+    price: "₹59",
+    priceUnit: "/Piece",
+    image: "https://5.imimg.com/data5/ANDROID/Default/2026/2/584679849/FD/VE/ZL/260299642/product-jpeg-1000x1000.jpeg",
+    images: ["https://5.imimg.com/data5/ANDROID/Default/2026/2/584679849/FD/VE/ZL/260299642/product-jpeg-1000x1000.jpeg", "https://5.imimg.com/data5/ANDROID/Default/2026/2/584679808/HJ/JF/JH/260299642/product-jpeg-1000x1000.jpg", "https://5.imimg.com/data5/ANDROID/Default/2026/2/584679799/WA/KU/HB/260299642/product-jpeg-1000x1000.jpg"],
+    badge: "",
+    specs: {},
+    desc: "",
+    indiamart: ""
   }
-  */
 
 ];
