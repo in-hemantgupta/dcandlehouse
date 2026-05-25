@@ -286,7 +286,7 @@ button { border: none; cursor: pointer; background: none; font-family: inherit; 
   50% { transform: translate(40px, -30px) scale(1.08); }
 }
 
-.hero-content { padding: 80px 0 60px; }
+.hero-content { padding: 60px 0 60px; }
 
 .hero-label {
   display: inline-flex;
@@ -1318,4 +1318,257 @@ button { border: none; cursor: pointer; background: none; font-family: inherit; 
 .cat-pill.active .pill-count {
   background: rgba(255,255,255,0.3);
   color: white;
+}
+
+/* ═══════════════════════════════════════════
+   LOOKBOOK SECTIONS
+   ═══════════════════════════════════════════ */
+
+#productGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.lookbook-section {
+  margin-bottom: 80px;
+}
+
+/* Section hero banner */
+.lookbook-hero {
+  position: relative;
+  width: 100%;
+  height: 380px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  margin-bottom: 36px;
+  box-shadow: var(--shadow-lg);
+}
+.lookbook-hero img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.8s ease;
+  filter: brightness(0.75);
+}
+.lookbook-hero:hover img { transform: scale(1.04); }
+
+.lookbook-hero-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 40px 48px;
+  background: linear-gradient(to top, rgba(18,8,8,0.85) 0%, rgba(18,8,8,0.2) 60%, transparent 100%);
+}
+.lb-emoji {
+  font-size: 2rem;
+  margin-bottom: 8px;
+  line-height: 1;
+}
+.lb-title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 300;
+  color: white;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  margin-bottom: 8px;
+}
+.lb-tagline {
+  font-size: 1rem;
+  color: rgba(255,255,255,0.7);
+  font-weight: 300;
+  margin-bottom: 16px;
+}
+.lb-count {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255,255,255,0.2);
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 6px 14px;
+  border-radius: 40px;
+  width: fit-content;
+}
+
+/* Product grid per section */
+.lookbook-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+/* ═══════════════════════════════════════════
+   CAROUSEL CARDS
+   ═══════════════════════════════════════════ */
+
+.product-img {
+  position: relative;
+  width: 100%; height: 260px;
+  background: var(--blush);
+  overflow: hidden;
+}
+
+.carousel-track {
+  position: relative;
+  width: 100%; height: 100%;
+}
+.carousel-img {
+  position: absolute;
+  inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  display: block;
+}
+.carousel-img.active { opacity: 1; }
+
+/* Prev/Next buttons */
+.car-btn {
+  position: absolute;
+  top: 50%; transform: translateY(-50%);
+  width: 32px; height: 32px;
+  border-radius: 50%;
+  background: rgba(18,8,8,0.55);
+  backdrop-filter: blur(4px);
+  color: white;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+  cursor: pointer;
+  border: 1px solid rgba(255,255,255,0.15);
+  opacity: 0;
+  transition: opacity 0.2s, background 0.2s;
+  line-height: 1;
+}
+.car-prev { left: 8px; }
+.car-next { right: 8px; }
+.product-card:hover .car-btn { opacity: 1; }
+.car-btn:hover { background: rgba(155,69,69,0.8); }
+
+/* Dots */
+.carousel-dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%; transform: translateX(-50%);
+  display: flex;
+  gap: 5px;
+  z-index: 5;
+}
+.cdot {
+  width: 5px; height: 5px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.45);
+  transition: all 0.25s ease;
+}
+.cdot.active {
+  background: white;
+  width: 14px;
+  border-radius: 3px;
+}
+
+/* Quick view overlay */
+.product-img-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(18,8,8,0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: opacity 0.3s;
+  cursor: pointer;
+  z-index: 3;
+}
+.product-card:hover .product-img-overlay { opacity: 1; }
+
+/* ═══════════════════════════════════════════
+   MODAL GALLERY
+   ═══════════════════════════════════════════ */
+
+.modal-thumbs {
+  display: flex;
+  gap: 8px;
+  padding: 12px 16px;
+  overflow-x: auto;
+  background: rgba(18,8,8,0.04);
+  scrollbar-width: thin;
+}
+.modal-thumb {
+  width: 60px; height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  flex-shrink: 0;
+  opacity: 0.6;
+  transition: all 0.2s;
+}
+.modal-thumb:hover { opacity: 0.85; }
+.modal-thumb.active {
+  border-color: var(--pink-deep);
+  opacity: 1;
+}
+
+/* Modal nav buttons */
+.modal-nav-btn {
+  position: absolute;
+  top: 50%; transform: translateY(-50%);
+  width: 38px; height: 38px;
+  border-radius: 50%;
+  background: rgba(18,8,8,0.6);
+  backdrop-filter: blur(8px);
+  color: white;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 1px solid rgba(255,255,255,0.15);
+  z-index: 10;
+  transition: background 0.2s;
+  line-height: 1;
+}
+.modal-prev { left: 12px; }
+.modal-next { right: 12px; }
+.modal-nav-btn:hover { background: rgba(155,69,69,0.8); }
+
+/* ═══════════════════════════════════════════
+   RESPONSIVE
+   ═══════════════════════════════════════════ */
+
+@media (max-width: 768px) {
+  .lookbook-hero { height: 260px; }
+  .lookbook-hero-overlay { padding: 24px; }
+  .lb-title { font-size: 1.8rem; }
+  .lookbook-grid { grid-template-columns: 1fr 1fr; gap: 14px; }
+  .product-img { height: 200px; }
+  .car-btn { opacity: 1; width: 28px; height: 28px; font-size: 1.1rem; }
+}
+
+@media (max-width: 480px) {
+  .lookbook-hero { height: 220px; border-radius: var(--radius); }
+  .lb-title { font-size: 1.5rem; }
+  .lb-tagline { font-size: 0.85rem; }
+  .lookbook-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .product-img { height: 160px; }
+  .product-body { padding: 12px; }
+  .product-name { font-size: 0.85rem; }
+  .modal-thumb { width: 48px; height: 48px; }
 }
