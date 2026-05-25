@@ -154,7 +154,7 @@
     if (e.key === 'Escape') closeModal();
   });
 
-  /* ══ Contact Form → WhatsApp ══ */
+  /* ══ Contact Form → WhatsApp (link-based, no popup blocker issues) ══ */
   const contactForm = qs('#contactForm');
   if (contactForm) {
     contactForm.addEventListener('submit', e => {
@@ -164,20 +164,29 @@
       const phone   = (contactForm.querySelector('#phone').value || '').trim();
       const message = (contactForm.querySelector('#message').value || '').trim();
 
-      if (!name || !message) return;
+      if (!name || !message) {
+        alert('Please fill in your name and message.');
+        return;
+      }
 
       const text = [
-        `Hi D Candle House! 👋`,
-        ``,
-        `*Name:* ${name}`,
-        phone ? `*Phone:* ${phone}` : null,
-        ``,
-        `*Message:*`,
+        'Hi D Candle House! 👋',
+        '',
+        '*Name:* ' + name,
+        phone ? '*Phone:* ' + phone : null,
+        '',
+        '*Message:*',
         message
       ].filter(l => l !== null).join('\n');
 
-      const waUrl = `${WA_BASE}${encode(text)}`;
-      window.open(waUrl, '_blank');
+      // Use anchor click instead of window.open — bypasses popup blockers
+      const a = document.createElement('a');
+      a.href = WA_BASE + encode(text);
+      a.target = '_blank';
+      a.rel = 'noopener';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
 
       // Show success, reset form
       const successEl = qs('#formSuccess');
