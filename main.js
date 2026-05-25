@@ -76,7 +76,7 @@
         </div>
         <div class="product-body">
           <p class="product-cat">${product.categoryLabel}</p>
-          <h3 class="product-name">${product.name}</h3>
+          <h3 class="product-name" title="${product.name}">${product.name}</h3>
           <p class="product-price">${product.price}<span>${product.priceUnit}</span></p>
           <div class="product-actions">
             <a class="product-wa"
