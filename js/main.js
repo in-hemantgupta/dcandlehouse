@@ -76,7 +76,7 @@
         </div>
         <div class="product-body">
           <p class="product-cat">${product.categoryLabel}</p>
-          <h3 class="product-name">${product.name}</h3>
+          <h3 class="product-name" title="${product.name}">${product.name}</h3>
           <p class="product-price">${product.price}<span>${product.priceUnit}</span></p>
           <div class="product-actions">
             <a class="product-wa"
@@ -154,41 +154,45 @@
     if (e.key === 'Escape') closeModal();
   });
 
-  /* ══ Contact Form (Formspree) ══ */
+  /* ══ Contact Form → WhatsApp (link-based, no popup blocker issues) ══ */
   const contactForm = qs('#contactForm');
   if (contactForm) {
-    contactForm.addEventListener('submit', async e => {
+    contactForm.addEventListener('submit', e => {
       e.preventDefault();
-      const btn = contactForm.querySelector('.form-submit');
-      const originalText = btn.textContent;
-      btn.textContent = 'Sending…';
-      btn.disabled = true;
 
-      try {
-        const formData = new FormData(contactForm);
-        const res = await fetch(contactForm.action, {
-          method: 'POST',
-          body: formData,
-          headers: { Accept: 'application/json' }
-        });
+      const name    = (contactForm.querySelector('#name').value || '').trim();
+      const phone   = (contactForm.querySelector('#phone').value || '').trim();
+      const message = (contactForm.querySelector('#message').value || '').trim();
 
-        if (res.ok) {
-          qs('#formSuccess').style.display = 'block';
-          contactForm.reset();
-          setTimeout(() => { qs('#formSuccess').style.display = 'none'; }, 6000);
-        } else {
-          alert('Something went wrong. Please reach us on WhatsApp directly.');
-        }
-      } catch {
-        // Fallback to WhatsApp
-        const name = contactForm.querySelector('#name').value;
-        const msg = contactForm.querySelector('#message').value;
-        const waMsg = encode(`Hi D Candle House!\n\nName: ${name}\nMessage: ${msg}`);
-        window.open(`${WA_BASE}${waMsg}`, '_blank');
+      if (!name || !message) {
+        alert('Please fill in your name and message.');
+        return;
       }
 
-      btn.textContent = originalText;
-      btn.disabled = false;
+      const text = [
+        'Hi D Candle House! 👋',
+        '',
+        '*Name:* ' + name,
+        phone ? '*Phone:* ' + phone : null,
+        '',
+        '*Message:*',
+        message
+      ].filter(l => l !== null).join('\n');
+
+      // Use anchor click instead of window.open — bypasses popup blockers
+      const a = document.createElement('a');
+      a.href = WA_BASE + encode(text);
+      a.target = '_blank';
+      a.rel = 'noopener';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+
+      // Show success, reset form
+      const successEl = qs('#formSuccess');
+      successEl.style.display = 'block';
+      contactForm.reset();
+      setTimeout(() => { successEl.style.display = 'none'; }, 5000);
     });
   }
 
