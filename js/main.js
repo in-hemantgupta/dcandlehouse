@@ -171,11 +171,10 @@
       const text = [
         'Hi D Candle House! 👋',
         '',
-        '*Name:* ' + name,
-        phone ? '*Phone:* ' + phone : null,
+        'Name: ' + name,
+        phone ? 'Phone: ' + phone : null,
         '',
-        '*Message:*',
-        message
+        'Message: ' + message
       ].filter(l => l !== null).join('\n');
 
       // Use anchor click instead of window.open — bypasses popup blockers
