@@ -54,7 +54,8 @@
       title:   'Resin Clocks',
       tagline: 'Handcrafted epoxy resin wall clocks — every piece is unique art',
       emoji:   '🕐',
-      hero:    'https://5.imimg.com/data5/SELLER/Default/2026/1/574646347/ZX/FW/ZZ/260299642/rectangle-resin-clock-1000x1000.jpeg',
+      // Ocean triangle clock — full product visible, beautiful colours
+      hero:    'https://5.imimg.com/data5/WA_9696/Default/2026/1/574303523/LT/DL/PW/260299642/image-1767868420-1263-919950269992-1000x1000.jpeg',
       cats:    ['Resin Clock'],
     },
     {
@@ -62,7 +63,8 @@
       title:   'Candle Jars',
       tagline: 'Concrete, ceramic & glass jars crafted to hold your light',
       emoji:   '🫙',
-      hero:    'https://5.imimg.com/data5/WA_9696/Default/2026/1/575271767/DG/AD/MT/260299642/image-1000x1000.jpeg',
+      // Concrete bowl jar — clean white background, elegant
+      hero:    'https://5.imimg.com/data5/WA_9696/Default/2026/1/575271778/LS/TZ/WZ/260299642/image-1000x1000.jpeg',
       cats:    ['Decorative Candle Jar'],
     },
     {
@@ -70,7 +72,8 @@
       title:   'Candles',
       tagline: 'Soy wax, lead-free cotton wicks, beautiful fragrances',
       emoji:   '🕯',
-      hero:    'https://5.imimg.com/data5/WA_9696/Default/2026/1/575304301/QL/MH/JA/260299642/image-1000x1000.jpeg',
+      // Rose jar candle — atmospheric lifestyle shot
+      hero:    'https://5.imimg.com/data5/WA_9696/Default/2026/1/573685828/LS/ZV/FS/260299642/image-1000x1000.jpeg',
       cats:    ['Jar Candle', 'Soy Wax Candle', 'Scented Candle'],
     },
     {
@@ -78,7 +81,8 @@
       title:   'Resin Trays & Thalis',
       tagline: 'Floral, marble & ocean-inspired epoxy resin art pieces',
       emoji:   '🎨',
-      hero:    'https://5.imimg.com/data5/WA_9696/Default/2026/1/574411461/PN/KA/SQ/260299642/image-1000x1000.jpeg',
+      // Marble effect tray — stunning close-up
+      hero:    'https://5.imimg.com/data5/WA_9696/Default/2026/1/575543192/DE/TC/XW/260299642/image-1000x1000.jpeg',
       cats:    ['Epoxy Resin Tray', 'Resin Pooja Thali'],
     },
     {
@@ -86,6 +90,7 @@
       title:   'More from D Candle House',
       tagline: 'Bags, keychains, tables, frames & home décor',
       emoji:   '✨',
+      // Ombre clutch bag — vibrant, luxurious
       hero:    'https://5.imimg.com/data5/SELLER/Default/2026/1/575862945/KW/WU/AA/260299642/ombre-resin-clutch-bag-1000x1000.jpeg',
       cats:    ['Clutch Bag', 'Keychain', 'Resin Coaster', 'Resin Table', 'Mantra Frame', 'Other'],
     },
